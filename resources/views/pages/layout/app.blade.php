@@ -14,17 +14,17 @@
         }</style>
 
     <!-- This site is optimized with the Yoast SEO plugin v25.0 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>BELAY: Virtual Assistants &amp; Accounting Services to Serve You</title>
+    <title>{{ env('APP_NAME') }}: Virtual Assistants &amp; Accounting Services to Serve You</title>
     <meta name="description"
           content="Whether you need a Virtual Assistant, Accounting, or Marketing Assistant Services, we&#039;re ready to help you find the perfect match."/>
     <link rel="canonical" href="index.html"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="BELAY: Virtual Assistants &amp; Accounting Services to Serve You"/>
+    <meta property="og:title" content="{{ env('APP_NAME') }}: Virtual Assistants &amp; Accounting Services to Serve You"/>
     <meta property="og:description"
           content="Whether you need a Virtual Assistant, Accounting, or Marketing Assistant Services, we&#039;re ready to help you find the perfect match."/>
     <meta property="og:url" content="https://belaysolutions.com/"/>
-    <meta property="og:site_name" content="BELAY Solutions"/>
+    <meta property="og:site_name" content="{{ env('APP_NAME') }} Solutions"/>
     <meta property="article:modified_time" content="2025-04-25T11:07:37+00:00"/>
     <meta property="og:image" content="https://belaysolutions.com/wp-content/uploads/2022/04/belay-og.png"/>
     <meta property="og:image:width" content="1000"/>
@@ -37,8 +37,8 @@
     <link rel='dns-prefetch' href='http://js.hs-scripts.com/'/>
     <link rel='dns-prefetch' href='http://kit.fontawesome.com/'/>
     <link rel='dns-prefetch' href='http://www.googletagmanager.com/'/>
-    <link rel="alternate" type="application/rss+xml" title="BELAY Solutions &raquo; Feed" href="feed/index.html"/>
-    <link rel="alternate" type="application/rss+xml" title="BELAY Solutions &raquo; Comments Feed"
+    <link rel="alternate" type="application/rss+xml" title="{{ env('APP_NAME') }} Solutions &raquo; Feed" href="feed/index.html"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ env('APP_NAME') }} Solutions &raquo; Comments Feed"
           href="comments/feed/index.html"/>
     <script>
         window._wpemojiSettings = {
@@ -1186,9 +1186,12 @@
         </div>
         <div id="navbar">
             <div id="navbar-left">
-                <a href="index.html"><img
-                        src="https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg"
-                        alt="BELAY Logo" id="logo"/></a>
+                <a href="{{ route('index') }}">
+                    <h3 style="">{{ env('APP_NAME') }}</h3>
+{{--                    <img--}}
+{{--                        src="https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg"--}}
+{{--                        alt="BELAY Logo" id="logo"/>--}}
+                </a>
             </div>
             <div id="navbar-middle">
                 <div id="services-link-container">
@@ -1394,7 +1397,7 @@
                 <a href="work-with-us/index.html" class="header-link">JOBS</a>
             </div>
             <div id="navbar-right">
-                <a id="belay-hire-btn" class="btn" href="get-started/index.html">Hire BELAY</a>
+                <a id="belay-hire-btn" class="btn" href="get-started/index.html">Hire {{ env('APP_NAME') }}</a>
 
                 <script>
                     function hamburgerMenu(x) {
@@ -1457,7 +1460,7 @@
             <div id="full-screen-menu-left-column">
                 <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                     <div class="full-screen-menu-left-column-menu-item">
-                        <a href="get-started/index.html" class="full-screen-menu-left-column-link">Hire BELAY
+                        <a href="get-started/index.html" class="full-screen-menu-left-column-link">Hire {{ env('APP_NAME') }}
                             <div class="full-screen-menu-link-underline"></div>
                         </a>
                     </div>
@@ -1563,7 +1566,7 @@
                     <li><a target="_blank" href="get-started/index.html"><i class="fa fa-envelope"></i></a></li>
                 </ul>
                 <p class="copyright-info">
-                    &copy; <span id="current-year"></span> BELAY. Made with &hearts; from the BELAY team.
+                    &copy; <span id="current-year"></span> {{ env('APP_NAME') }}. Made with &hearts; from the {{ env('APP_NAME') }} team.
                 </p>
             </div>
 
@@ -1601,7 +1604,7 @@
                             <h5 class="secondary">AI-Empowered Virtual Assistant, Accounting, and Marketing Assistant
                                 staffing solutions.</h5>
                             <p></p>
-                            <a class="btn" id="hero-cta-btn" href="get-started/index.html"><span>Hire BELAY</span><i
+                            <a class="btn" id="hero-cta-btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span><i
                                     class="bi bi-chevron-down"></i></a></div>
                     </div>
                 </div>
@@ -1794,7 +1797,7 @@
                               alt="BELAY Logo"/></div>
                     <p>The Right Hire. Right Now.</p>
                     <p>Virtual Assistants. Accounting Services. Marketing Assistants.</p>
-                    <p>Made with ♥ from the BELAY team.</p>
+                    <p>Made with ♥ from the {{ env('APP_NAME') }} team.</p>
                 </div>
                 <div class="col-lg-3">
                     <p><a class="footer-menu-link" href="get-started/index.html">Get Started</a></p>
@@ -1827,7 +1830,7 @@
         <div class="container copyright-container">
             <div class="row">
                 <div class="col-lg-5">
-                    <p>© 2025 BELAY. <a href="privacy-policy/index.html">Privacy</a> | <a
+                    <p>© 2025 {{ env('APP_NAME') }}. <a href="privacy-policy/index.html">Privacy</a> | <a
                             href="terms-conditions/index.html">Terms</a> | <a
                             href="https://blog.belaysolutions.com/expert-insight-how-to-find-skilled-remote-workers-for-your-great-remote-jobs">Diversity
                             &amp; Inclusion</a></p>
@@ -1851,7 +1854,7 @@
                                                                                 aria-hidden="true"></i></a></li>
                         <li><a href="tel:18555523529"><span class="screen-reader-text">phone</span><i
                                     class="fa fa-phone" aria-hidden="true"></i></a></li>
-                        <li><a href="get-started/index.html"><span class="screen-reader-text">Hire BELAY</span><i
+                        <li><a href="get-started/index.html"><span class="screen-reader-text">Hire {{ env('APP_NAME') }}</span><i
                                     class="fa fa-envelope" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
