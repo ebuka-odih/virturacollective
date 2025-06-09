@@ -1,0 +1,197 @@
+/* Main Visual ふわっと浮き上がるアニメ */
+/* ---------------------------- */
+.catch{
+    display:none;
+  }
+
+/* スクロールすると中央へ寄る動きをするアニメ */
+/* ---------------------------- */
+
+.mv_fade_in{
+    display: block;
+    padding: 20px;
+    background-color: cadetblue;
+}
+
+.fade_in{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+
+.u-slide-up {
+  animation: Slide_Up 1.4s ease;
+}
+
+.u-slide-down {
+  animation: Slide_Down 1.4s ease;
+}
+
+@keyframes Slide_Up {
+  0% {
+      transform: translateY(250px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+
+@keyframes Slide_Down {
+  0% {
+      transform: translateY(0px);
+  }
+  100% {
+      transform: translateY(250px);
+  }
+}
+/* アニメーションスタイル 右から中央へ*/
+/* ---------------------------- */
+
+/* アニメーション前 */
+.u-fade-type-left{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.u-fade-type-left.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* アニメーションスタイル 右から中央へ*/
+/* ---------------------------- */
+
+/* アニメーション前 */
+.u-fade-type-right{
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.u-fade-type-right.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* メインビジュアル　動くアニメ */
+/* ---------------------------- */
+
+/* アニメーションスタイル 上から下へ*/
+/* ---------------------------- */
+
+/* アニメーション前 */
+.u-fade-type-down{
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.u-fade-type-down.is-active{
+    transition: 2s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* アニメーションスタイル 下から上へ*/
+/* ---------------------------- */
+
+/* アニメーション前 */
+.u-fade-type-up{
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.u-fade-type-up.is-active{
+    transition: 2s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* アニメーションスタイル 位置固定*/
+/* ---------------------------- */
+
+/* アニメーション前 */
+.u-fade-type-static{
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.u-fade-type-static.is-active{
+    transition: 2s;
+    opacity: 1;
+}
+
+.hoverAnimationGreenIcon i {
+	color:#12D678!important;
+}
+	
+.zoom-out-animation.is-active {
+		transform: scale(0.9);
+		transition: 1.5s;
+}
+	
+.zoom-out-animation {
+	transform: scale(1.2);
+}
+
+.zoom-out-animation.is-active {
+		transform: scale(1);
+		transition: 5s;
+}
+
+.delay-1.is-active {
+	transition-delay: 0.1s;
+}
+
+.delay-2.is-active {
+	transition-delay: 0.2s;
+}
+
+.delay-3.is-active {
+	transition-delay: 0.3s;
+}
+
+.delay-4.is-active {
+	transition-delay: 0.4s;
+}
+
+.delay-5.is-active {
+	transition-delay: 0.5s;
+}
+
+
+.delay-6.is-active {
+	transition-delay: 0.6s;
+}
+
+.delay-7.is-active {
+	transition-delay: 0.7s;
+}
+
+.delay-8.is-active {
+	transition-delay: 0.8s;
+}
+
+.delay-9.is-active {
+	transition-delay: 1s;
+}
+
+.delay-10.is-active {
+	transition-delay: 1.2s;
+}
+
+.delay-11.is-active {
+	transition-delay: 1.4s;
+}
+
+
+.delay-12.is-active {
+	transition-delay: 1.6s;
+}
