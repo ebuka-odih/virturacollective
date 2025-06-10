@@ -148,7 +148,7 @@
              style="background: white;">
         <div class="container">
             <div class="row d-flex flex-row text-center justify-content-center">
-                <h2>Your AI-empowered BELAY Professional will transform your workday.</h2>
+                <h2>Your AI-empowered {{ env('APP_NAME') }} Professional will transform your workday.</h2>
                 <div class="col-sm-6 text-center" id="transformed-main-image"></div>
                 <div class="col-sm-6 text-left d-flex flex-column justify-content-center image-list">
                     <div class="row d-flex flex-row text-left justify-content-center transform-list-block"
@@ -193,10 +193,10 @@
                             <i class="bi bi-headset"></i>
                             <h2>Virtual Assistants</h2>
                             <p>Are you drowning in pesky notifications, calendar invitations, and missed deadlines? A
-                                BELAY Virtual Assistant can take it all off your desk — and your mind. From
-                                administration to project management, a BELAY Virtual Assistant, empowered by AI tools
+                                {{ env('APP_NAME') }} Virtual Assistant can take it all off your desk — and your mind. From
+                                administration to project management, a {{ env('APP_NAME') }} Virtual Assistant, empowered by AI tools
                                 and technology, can handle it so that you can focus on the tasks that matter. Accomplish
-                                more and juggle less with a BELAY Virtual Assistant.</p>
+                                more and juggle less with a {{ env('APP_NAME') }} Virtual Assistant.</p>
                         </div>
                     </a>
                 </div>
@@ -206,7 +206,7 @@
                         <div class="box-inner d-flex flex-column justify-content-flex-start">
                             <i class="bi bi-cash-stack"></i>
                             <h2>Accounting Professionals</h2>
-                            <p>BELAY offers complete financial solutions, including Bookkeeping, Payroll, Fractional
+                            <p>{{ env('APP_NAME') }} offers complete financial solutions, including Bookkeeping, Payroll, Fractional
                                 CFOs and Controllers, Tax Services, Enterprise Accounting, Inventory Consulting, and
                                 more. Our experts, empowered by AI-driven insights and tools, provide full-scale
                                 accounting support, optimizing systems and ensuring compliance, so you can focus on
@@ -220,7 +220,7 @@
                         <div class="box-inner d-flex flex-column justify-content-flex-start">
                             <i class="bi bi-share"></i>
                             <h2>Marketing Assistants</h2>
-                            <p>A BELAY Marketing Assistant offers busy leaders the flexible support they need to enhance
+                            <p>A {{ env('APP_NAME') }} Marketing Assistant offers busy leaders the flexible support they need to enhance
                                 their marketing impact. Empowered by AI-enhanced tools and strategies, a Marketing
                                 Assistant will manage your social media platforms and create on-brand content to expand
                                 your reach in the marketing world including podcasts, webinars, and digital resources.
@@ -239,19 +239,19 @@
             <div class="row d-flex flex-row justify-content-center">
                 <div class="col-sm-6 text-left">
                     <h2 class="text-left">Amplifying Human Intelligence with AI</h2>
-                    <p>Human-Led. AI-Empowered. Future-Proofed.<br/><br/>At BELAY, we don’t use AI to replace people. We
+                    <p>Human-Led. AI-Empowered. Future-Proofed.<br/><br/>At {{ env('APP_NAME') }}, we don’t use AI to replace people. We
                         use it to amplify them, delivering strategic support that blends elite human expertise with
-                        intentional AI enablement.<br/><br/>While others talk about AI tools, BELAY delivers
+                        intentional AI enablement.<br/><br/>While others talk about AI tools, {{ env('APP_NAME') }} delivers
                         AI-integrated professionals — equipped with custom GPTs, AI frameworks, and automation systems
                         designed around what leaders actually need: clarity, consistency, and growth.<br/><br/><span
-                            style="font-weight: 700;">The BELAY Difference</span><br/><br/>Our approach goes beyond
+                            style="font-weight: 700;">The {{ env('APP_NAME') }} Difference</span><br/><br/>Our approach goes beyond
                         plug-and-play tools:<br/>
                     <ul style="list-style-position: outside;">
                         <li style="color: #ffffff;"><span style="font-weight: 700; color: #ffffff;">Proprietary Technology:</span>
                             Custom GPTs aligned to leadership personas — from entrepreneurs to C-suite execs.
                         </li>
                         <li style="color: #ffffff;"><span style="font-weight: 700; color: #ffffff;">Exceptional Outcomes:</span>
-                            BELAY professionals multiply their efficiency, productivity, and your investment by more
+                            {{ env('APP_NAME') }} professionals multiply their efficiency, productivity, and your investment by more
                             than 60%*.
                         </li>
                         <li style="color: #ffffff;"><span
@@ -265,11 +265,11 @@
                         </li>
                         <li style="color: #ffffff;"><span
                                 style="font-weight: 700; color: #ffffff;">AI with Intention:</span> Our technology
-                            doesn’t just automate — it empowers BELAY professionals to not only keep up with innovation
+                            doesn’t just automate — it empowers {{ env('APP_NAME') }} professionals to not only keep up with innovation
                             but lead it for you.
                         </li>
                     </ul>
-                    <p>This means BELAY contractors don’t just complete tasks. They think, anticipate, and act with
+                    <p>This means {{ env('APP_NAME') }} contractors don’t just complete tasks. They think, anticipate, and act with
                         precision, supported by AI that helps them move faster, surface insights, and deliver strategic
                         value.<br/><br/>The result?<br/><br/>Higher ROI. Stronger retention. And support that doesn’t
                         just lighten your load — it moves your organization forward.</p></p>
@@ -312,7 +312,7 @@
                         </svg>
                         <h3>Step 1. Sales Call</h3>
                         <p>Meet with your Solutions Consultant to identify your exact needs and pain points and
-                            determine the right hire for you. If BELAY is a good fit, we’ll send you an agreement to
+                            determine the right hire for you. If {{ env('APP_NAME') }} is a good fit, we’ll send you an agreement to
                             sign, and you’ll be paired with a Client Success Consultant.</p>
                     </div>
                 </div>
@@ -498,7 +498,7 @@
 </svg>
                         <h3>Step 2. Discovery Call</h3>
                         <p>Meet with your Client Success Consultant to deep dive into your tasks, tools, culture, and
-                            personality requirements to ensure we match you with the right BELAY Professional.</p>
+                            personality requirements to ensure we match you with the right {{ env('APP_NAME') }} Professional.</p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 boxed-column d-flex flex-column justify-content-flex-start">
@@ -613,15 +613,15 @@
                                   d="M278.7,114.4c-2.4,.6-4.8-.9-5.4-3.4-11.2-47.5-53.1-80.6-101.8-80.6S80.8,63.5,69.7,111c-.5,2.1-2.4,3.5-4.4,3.5-.4,0-.7-.1-1.1-.1-2.4-.6-4-3-3.4-5.4,5.8-24.6,19.8-46.8,39.6-62.7,20-16.1,45.3-24.9,71.1-24.9s51,8.9,71,24.9c19.8,15.8,33.8,38.1,39.6,62.7,.6,2.4-.9,4.8-3.4,5.4ZM80,198.8c-2.8-7.1-5.7-14.4-7.8-21.9-3.5-12.3-5.3-26.4-5.3-41.8,0-2.5-2-4.5-4.5-4.5s-4.5,2-4.5,4.5c0,16.3,1.9,31.2,5.7,44.4,2.2,7.8,5.3,15.4,8.1,22.7,4.1,10.4,8.1,20.3,10,31.1,3.2,17.9,5.8,34.1,4.6,51.1-.7,9.1-3,16.4-6.7,21.5-1.5,2-1.1,4.8,.9,6.3,.8,.6,1.7,.9,2.7,.9,1.4,0,2.7-.6,3.7-1.9,4.8-6.5,7.6-15.3,8.4-26.1,1.4-18.1-1.4-35.6-4.7-53.4-2.1-11.8-6.4-22.5-10.6-32.9Zm67.8-71.4c1.2,.8,1.9,2.2,1.9,3.7s-.7,2.9-1.9,3.7l-19.5,13.6c-.7,.5-1.7,.8-2.6,.8-.7,0-1.4-.1-2.1-.5-1.4-.8-2.4-2.3-2.4-4v-9.4c-25.6-2-89.3-9.3-89.3-30.7,0-8,8.1-14.5,25-19.9,2.4-.8,4.9,.6,5.7,3,.7,2.4-.6,4.9-3,5.7-14.8,4.8-18.7,9.3-18.7,11.2,0,2.1,4.7,7.1,22,12.2,14.6,4.3,35.2,7.6,58.3,9.4v-8.7c0-1.7,.9-3.2,2.4-4s3.3-.6,4.7,.4l19.5,13.5Zm-10.5,3.6l-7.1-4.9v9.9l7.1-5Zm145.2,78.3c.4,0,.6,0,.9-.1,19.4-4.1,28.4-9,29.5-16,.6-4.7-2.7-8.4-6-10.3l-21.8-16.6v-31.3c0-2.5-2.1-4.5-4.5-4.5s-4.5,2-4.5,4.5v33.6c0,1.4,.6,2.7,1.8,3.6l23.8,18.1c.2,.1,.4,.3,.6,.4,.4,.2,1.2,.9,1.5,1.4-.6,.8-4.1,4.4-21.7,8.2h-2c-1.4,0-2.6,.6-3.5,1.5-7.2,8.4-3.7,16.1-.9,22.3,.9,1.9,1.7,3.8,2.3,5.7,.4,1,.7,1.9,1,2.8s.7,1.9,.9,2.7c-.1,0-.2,.1-.4,.1-12.4,3.5-19.5,3.1-31.2,2-2.5-.2-4.7,1.6-5,4.1-.2,2.4,1.7,4.7,4.1,4.9,5,.5,9.3,.8,13.5,.8,3.6,0,7.2-.2,11.1-.9,1.2-1.5,3.4-2.1,5.3-1.3q.1,.1,.3,.2c1.4-.4,2.8-.7,4.3-1.2,3-.9,5.1-2.4,6.2-4.5,1.7-3.4,.4-6.9-.6-10-.3-.8-.6-1.7-.8-2.4-.8-2.4-1.8-4.7-2.7-6.8-2.5-5.5-3.5-8.1-1.7-11.1h.2v.1Zm-4.8,36c-.1-.1-.2-.1-.3-.2-1.9-.8-4.1-.2-5.3,1.3-.3,.3-.5,.6-.6,1-2.8,6.4-4.5,13-6.2,19.4-1.7,6.3-3.2,12.2-5.7,17.9-4,9.2-15.8,8.5-30.8,6.6-2.5-.4-5-.6-7.1-.8-18-1.5-80.9-22.7-94-47.3-3.1-5.9-3.1-11.5,.1-17.1,1.2-2.2,.5-4.9-1.7-6.2-2.2-1.2-4.9-.4-6.1,1.7-4.7,8.3-4.8,17.2-.2,25.9,8.6,16.1,31.8,28.8,49.8,36.6,9.1,4,18.4,7.3,26.7,9.9v39.6c0,2.5,2,4.5,4.5,4.5s4.5-2,4.5-4.5v-37.1c6.6,1.7,12,2.7,15.6,3.1,2,.1,4.3,.4,6.8,.8,4.5,.6,9.9,1.2,15.1,1.2,10.2,0,20.4-2.5,25.1-13.1,2.8-6.3,4.5-12.9,6.1-19.2,1.7-6.3,3.2-12.3,5.8-18.1,.9-2.3-.1-4.8-2.1-5.9Zm8.6-159.4c-2.4-.9-5,.4-5.8,2.7-.9,2.4,.4,5,2.7,5.8,12.9,4.5,16.3,8.6,16.3,10.4,0,4.1-15.3,14.2-62,19.9v-8.6c0-1.7-.9-3.2-2.4-4s-3.3-.6-4.7,.3l-19.4,13.7c-1.2,.8-1.9,2.2-1.9,3.7s.7,2.9,1.9,3.7l19.5,13.7c.7,.5,1.7,.8,2.6,.8,.7,0,1.4-.1,2.1-.5,1.4-.8,2.4-2.3,2.4-4v-9.6c28.3-3.3,71-11.3,71-29,0-7.5-7.3-13.8-22.3-19Zm7.8-40.2l-3.6,15.7-2.5-15.9-15-3.7,15.2-2.7,3.6-15.7,2.5,15.9,15,3.7-15.2,2.7Zm14.2,30.2l-2.4,10.3-1.6-10.4-9.8-2.4,10-1.7,2.4-10.3,1.6,10.4,9.8,2.4-10,1.7ZM45.2,263.1l-4.1,17-2.9-17.3-17-4.1,17.3-2.9,4.1-17,2.9,17.3,17,4.1-17.3,2.9Zm16.2,32.9l-2.7,11.1-1.9-11.3-11.1-2.7,11.3-1.9,2.7-11.1,1.9,11.3,11.1,2.7-11.3,1.9Z"/>
                         </svg>
                         <h3>Step 6. Nurturing</h3>
-                        <p>You will have ongoing check-ins to support both you and your BELAY Professional throughout
-                            your partnership with BELAY.</p>
+                        <p>You will have ongoing check-ins to support both you and your {{ env('APP_NAME') }} Professional throughout
+                            your partnership with {{ env('APP_NAME') }}.</p>
                     </div>
                 </div>
 
             </div>
             <div class="row call-to-action-row">
                 <div class="col-lg-12 d-flex justify-content-center">
-                    <a class="btn" href="get-started/index.html"><span>Hire BELAY</span></a>
+                    <a class="btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
                 </div>
             </div>
         </div>
@@ -695,7 +695,7 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8 text-center">
                     <h2 class="text-center">Getting started is the easiest thing you’ll do today.</h2>
-                    <a class="btn" href="get-started/index.html">Hire BELAY</a>
+                    <a class="btn" href="get-started/index.html">Hire {{ env('APP_NAME') }}</a>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -707,8 +707,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4 left-column">
-                    <h2 class="text-left">The BELAY Difference</h2>
-                    <a class="btn" href="get-started/index.html"><span>Hire BELAY</span></a></div>
+                    <h2 class="text-left">The {{ env('APP_NAME') }} Difference</h2>
+                    <a class="btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a></div>
                 <div class="col-sm-12 col-md-12 col-lg-8 right-column layout-2">
                     <div class="boxed-column boxed-hover-on">
                         <div class="boxed-column-inner gradient-icon-parent layout-center">
@@ -905,12 +905,12 @@
                             <p class="text-center">"Kelli is doing a great job. She is very proactive and has already
                                 figured out how to stay one step ahead. I love that she is very resourceful and just
                                 gets in there to figure things out. I was very nervous about not being able to interview
-                                the candidates, but I'm so happy that I trusted the process. BELAY has found me the
+                                the candidates, but I'm so happy that I trusted the process. {{ env('APP_NAME') }} has found me the
                                 perfect match!"</p>
                         </li>
                         <li class="testimonial-slide">
                             <p class="text-center">“Can you clone Camille? If so, we’d like two more, please! Camille is
-                                everything. I recommend BELAY to anyone who will listen because of how much Camille has
+                                everything. I recommend {{ env('APP_NAME') }} to anyone who will listen because of how much Camille has
                                 changed my life for the better.”</p>
                         </li>
                         <li class="testimonial-slide">
@@ -1086,7 +1086,7 @@
                                         <source type="image/webp"
                                                 srcset="wp-content/uploads/2022/07/CR-Badge-Belay.png.webp"/>
                                         <img src="wp-content/uploads/2022/07/CR-Badge-Belay.png"
-                                             alt="BELAY - CardRates Editor&#039;s Choice Award"/>
+                                             alt="{{ env('APP_NAME') }} - CardRates Editor&#039;s Choice Award"/>
                                     </picture>
                                 </p>
                                 <h5 class="text-left">CardRates.com Editor's Choice Award</h5>
@@ -1171,12 +1171,12 @@
                 <div class="col-sm-6 text-left">
                     <h2 class="text-left">Work can be stressful.<br>Hiring doesn't have to be.</h2>
                     <p>When you realize you need help, the last thing you want is to spend hundreds of hours trying to
-                        find it.<br><br>BELAY takes the hassle out of hiring by intentionally matching you with
+                        find it.<br><br>{{ env('APP_NAME') }} takes the hassle out of hiring by intentionally matching you with
                         exceptional Virtual Assistants, Accounting Professionals, and Marketing Assistants.</p>
                 </div>
                 <div class="col-sm-6 text-right d-flex flex-column justify-content-center">
                     <div class="outter-button d-flex flex-row justify-content-end">
-                        <a class="btn" href="get-started/index.html">Hire BELAY<i class="bi bi-arrow-right"></i></a>
+                        <a class="btn" href="get-started/index.html">Hire {{ env('APP_NAME') }}<i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
