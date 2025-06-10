@@ -147,7 +147,7 @@
             padding: 0 !important;
         }
     </style>
-    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min3e78.css?ver=6.8'
+    <link rel='stylesheet' id='wp-block-library-css' href='{{ asset('wp-includes/css/dist/block-library/style.min3e78.css?ver=6.8') }}'
           media='all'/>
     <style id='classic-theme-styles-inline-css'>
         /*! This file is auto-generated */
@@ -186,7 +186,7 @@
 
     </style>
     <link rel='stylesheet' id='font-awesome-svg-styles-css'
-          href='wp-content/uploads/font-awesome/v6.7.2/css/svg-with-js.css' media='all'/>
+          href='{{ asset('wp-content/uploads/font-awesome/v6.7.2/css/svg-with-js.css') }}' media='all'/>
     <style id='font-awesome-svg-styles-inline-css'>
         .wp-block-font-awesome-icon svg::before,
         .wp-rich-text-font-awesome-icon svg::before {
@@ -518,12 +518,12 @@
             line-height: 1.6;
         }
     </style>
-    <link rel='stylesheet' id='belay-style-css' href='wp-content/themes/s/style8a54.css?ver=1.0.0' media='all'/>
+    <link rel='stylesheet' id='belay-style-css' href='{{ asset('wp-content/themes/s/style8a54.css?ver=1.0.0') }}' media='all'/>
     <script id="jquery-core-js-extra">
         var my_ajax_object = {"ajax_url": "https:\/\/belaysolutions.com\/wp-admin\/admin-ajax.php"};
     </script>
-    <script src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script src="{{ asset('wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1') }}" id="jquery-core-js"></script>
+    <script src="{{ asset('wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1') }}" id="jquery-migrate-js"></script>
     <script defer crossorigin="anonymous" src="https://kit.fontawesome.com/b8139b8932.js"
             id="font-awesome-official-js"></script>
 
@@ -700,7 +700,8 @@
             a.src = e + '/us-' + u[r].uid + '.js';
             a.async = s;
             n.getElementsByTagName(i)[0].appendChild(a);
-        })(window, document, 'head', 'script', 'https://amb-snippet.belaysolutions.com/', 'mbsy', true);</script>
+        })(window, document, 'head', 'script', 'https://amb-snippet.belaysolutions.com/', 'mbsy', true);
+    </script>
     <script>
         const currentUrl = window.location.href;
         if (currentUrl.indexOf('/get-started') > -1 || currentUrl.indexOf('/msgsf-demo') > -1) {
@@ -968,8 +969,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
             defer></script>
-    <link href="wp-content/themes/s/js/fade-in-scroll-load/css/common.css" rel="stylesheet">
-    <script src="wp-content/themes/s/js/fade-in-scroll-load/js/script.js" defer></script>
+    <link href="{{ asset('wp-content/themes/s/js/fade-in-scroll-load/css/common.css') }}" rel="stylesheet">
+    <script src="{{ asset('wp-content/themes/s/js/fade-in-scroll-load/js/script.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
             crossorigin="anonymous" defer></script>
@@ -1078,546 +1079,16 @@
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
 
-    <header class="header">
+   @include('pages.layout.header')
 
-        <script>
-            // When the user scrolls down 1px from the top of the document, change the navbar's background opacity and the swap the logo
-            // Fade the post title as the user scrolls
-
-            window.onscroll = function () {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if ((document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) && (document.getElementById("full-screen-menu-container").style.opacity == 0)) {
-                    document.getElementById("navbar").style.background = 'rgba(2, 41, 61, 1)';
-                    document.getElementById("logo").src = "https://resources.belaysolutions.com/hubfs/Belay Brand/BELAY Primary Logo Green + White.svg";
-                    document.getElementById("blog-post-title").style.opacity = 50 / document.documentElement.scrollTop;
-                } else {
-                    document.getElementById("navbar").style.background = 'rgba(2, 41, 61, 0)';
-                    document.getElementById("logo").src = "https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg";
-                    document.getElementById("blog-post-title").style.opacity = 1;
-                }
-            }
-        </script>
-
-        <script>
-            // Event tracking - turning this off per TigerTrack's request******
-            //		  const btn = document.querySelector("form input[type=submit]");
-            // 		  if (btn && btn.addEventListener && window.location.href.indexOf("get-started") > -1) {
-            // 		    btn.addEventListener("click",function() {
-            // 		        window.lintrk('track', { conversion_id: tel:9718697 });
-            // 		        fbq('track', 'HireBelay_FormSubmit', {content_category: 'Lead'});
-            // 		    })
-            // 		  }
-            // 		  if (btn && btn.addEventListener && window.location.href.indexOf("are-you-fine") > -1) {
-            // 		    btn.addEventListener("click",function() {
-            // 				window.lintrk('track', { conversion_id: 9718705 });
-            // 				fbq('track', 'ContentDownload, {content_category: 'CompleteRegistration'});
-            // 		    })
-            // 		  }
-        </script>
-
-        <style>
-            #navbar {
-                top: 55px;
-            }
-
-            #services-container, #resources-container {
-                top: 100px;
-            }
-
-            #top-banner p {
-                margin-bottom: 0;
-            }
-
-            @media only screen and (max-width: 1446px) {
-                #navbar {
-                    top: 55px;
-                }
-
-                #services-container, #resources-container {
-                    top: 100px;
-                }
-
-                #hero {
-                    padding-top: 20%;
-                }
-
-                #full-screen-menu-container {
-                    padding-top: 10%;
-                }
-            }
-
-            @media only screen and (max-width: 800px) {
-                #navbar {
-                    top: 50px;
-                }
-
-                #hero {
-                    padding-top: 40%;
-                }
-
-                #full-screen-menu-container {
-                    padding-top: 30%;
-                }
-
-                #top-banner {
-                    font-size: 0.75rem;
-                }
-            }
-
-            @media only screen and (max-width: 620px) {
-                #navbar {
-                    top: 50px;
-                }
-            }
-
-            @media only screen and (max-width: 500px) {
-                #navbar {
-                    top: 50px;
-                }
-            }
-        </style>
-        <div id="top-banner" class="u-fade-type-up js-scroll-trigger">BELAY is Excited to Welcome Accountfully!<span
-                style="background-color: #02293d; margin-left: 10px; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; padding-right: 6px; border-radius: 4px; margin-top: auto; margin-bottom: auto;"><a
-                    style="text-decoration: none; color: #ffffff;"
-                    href="https://blog.belaysolutions.com/belay-acquires-accountfully-to-expand-accounting-services">Learn More</a></span>
-        </div>
-        <div id="navbar">
-            <div id="navbar-left">
-                <a href="{{ route('index') }}">
-                    <h3 style="">{{ env('APP_NAME') }}</h3>
-{{--                    <img--}}
-{{--                        src="https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg"--}}
-{{--                        alt="BELAY Logo" id="logo"/>--}}
-                </a>
-            </div>
-            <div id="navbar-middle">
-                <div id="services-link-container">
-                    <a href="#" class="header-link">SERVICES</a>
-
-                    <div id="services-container">
-
-                        <div class="service-box">
-                            <div id="services-va" class="services-background">
-                                <a href="services/assistants/index.html" class="service-link">
-                                    <div class="services-link-wrapper">
-                                        <div class="service-display">
-                                            <div class="service-title">
-                                                <div class="service-title-align">
-                                                    Virtual<br/>Assistants
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="services-bk-margin service-box">
-                            <div id="services-bk" class="services-background">
-                                <a href="services/accounting/index.html" class="service-link">
-                                    <div class="service-link-wrapper">
-                                        <div class="service-display">
-                                            <div class="service-title">
-                                                <div class="service-title-align">
-                                                    Accounting Services
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="service-box">
-                            <div id="services-smm" class="services-background">
-                                <a href="services/marketing/index.html" class="service-link">
-                                    <div class="service-link-wrapper">
-                                        <div class="service-display">
-                                            <div class="service-title">
-                                                <div class="service-title-align">
-                                                    Marketing Assistants
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="resources-link-container">
-                    <a href="#" id="nav-bar--resources" class="header-link">RESOURCES</a>
-
-                    <div id="resources-container">
-                        <div id="resources-blog" class="resource-box">
-                            <a href="https://blog.belaysolutions.com/" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/blog-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-blog-title">
-                                            Blog
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-blog-hover">
-                                <a href="https://blog.belaysolutions.com/" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/blog-icon.svg"
-                                                class="resource-blog-hover-icon"/>
-                                            <div class="resource-blog-hover-title">
-                                                Blog
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="resources-case-studies" class="resource-box">
-                            <a href="https://blog.belaysolutions.com/tag/client-success-story" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/case-studies-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-case-studies-title">
-                                            Case<br/ >Studies
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-case-studies-hover">
-                                <a href="https://blog.belaysolutions.com/tag/client-success-story"
-                                   class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/case-studies-icon.svg"
-                                                class="resource-case-studies-hover-icon"/>
-                                            <div class="resource-case-studies-hover-title">
-                                                Case<br/ >Studies
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="resources-ebooks" class="resource-box">
-                            <a href="https://blog.belaysolutions.com/tag/ebooks-guides" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/ebooks-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-ebooks-title">
-                                            eBooks<br/ >&<br/>Guides
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-ebooks-hover">
-                                <a href="https://blog.belaysolutions.com/tag/ebooks-guides" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/ebooks-icon.svg"
-                                                class="resource-ebooks-hover-icon"/>
-                                            <div class="resource-ebooks-hover-title">
-                                                eBooks<br/ >&<br/>Guides
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="resources-courses" class="resource-box">
-                            <a href="courses/index.html" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/courses-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-courses-title">
-                                            Courses
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-courses-hover">
-                                <a href="courses/index.html" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/courses-icon.svg"
-                                                class="resource-courses-hover-icon"/>
-                                            <div class="resource-courses-hover-title">
-                                                Courses
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="resources-podcast" class="resource-box">
-                            <a href="podcast/index.html" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/podcast-icon.svg"
-                                            class="resource-podcast-icon"/>
-                                        <div class="resource-podcast-title">
-                                            Podcast
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-podcast-hover">
-                                <a href="podcast/index.html" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Landing Page Template/podcast-color-icon.svg"
-                                                class="resource-podcast-hover-icon"/>
-                                            <div class="resource-podcast-hover-title">
-                                                Podcast
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="work-with-us/index.html" class="header-link">JOBS</a>
-            </div>
-            <div id="navbar-right">
-                <a id="belay-hire-btn" class="btn" href="get-started/index.html">Hire {{ env('APP_NAME') }}</a>
-
-                <script>
-                    function hamburgerMenu(x) {
-                        x.classList.toggle("change");
-
-                        var menu = $('#full-screen-menu-container');
-
-                        var hamburger = $('.hamburger-icon-container');
-
-                        if (menu.css('opacity') === '0') {
-                            menu.css({
-                                'height': '100vh',
-                                'opacity': '1'
-                            });
-
-                            document.getElementById("logo").src = "https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg";
-                        } else {
-                            menu.css({
-                                'height': '0',
-                                'opacity': '0'
-                            });
-
-                            if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
-                                document.getElementById("logo").src = "https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo Green + White.svg";
-                            } else {
-                                document.getElementById("logo").src = "https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg";
-                            }
-                        }
-
-                        /* Remove navy background from menu if present */
-                        if ((document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) && (document.getElementById("full-screen-menu-container").style.opacity == 0)) {
-                            document.getElementById("navbar").style.background = 'rgba(2, 41, 61, 1';
-                        } else {
-                            document.getElementById("navbar").style.background = 'rgba(2, 41, 61, 0)';
-                        }
-
-                    }
-
-                    function fullScreenMenuLinkMouseOver(x) {
-                        x.classList.toggle("underline");
-                    }
-
-                    function fullScreenMenuLinkMouseOut(x) {
-                        x.classList.toggle("underline");
-                    }
-
-                </script>
-
-                <div class="hamburger-icon-container" onclick="hamburgerMenu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                    <div class="bar4"></div>
-                    <div class="bar5"></div>
-                </div>
-            </div>
-        </div>
-
-        <div id="full-screen-menu-container">
-            <div id="full-screen-menu-left-column">
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="get-started/index.html" class="full-screen-menu-left-column-link">Hire {{ env('APP_NAME') }}
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Commenting out until dropdowns in full screen menu functionality built
-			<div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-			<div class="full-screen-menu-left-column-menu-item">
-				<a href="" class="full-screen-menu-left-column-link">Services<div class="full-screen-menu-link-underline"></div></a>
-			</div>
-			</div>
-			-->
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="services/assistants/index.html" class="full-screen-menu-left-column-link">Virtual
-                            Assistants
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="services/accounting/index.html" class="full-screen-menu-left-column-link">Accounting
-                            Services
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="services/marketing/index.html" class="full-screen-menu-left-column-link">Marketing
-                            Assistants
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="podcast/index.html" class="full-screen-menu-left-column-link">Podcast
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="https://blog.belaysolutions.com/?_ga=2.238978884.590261100.1650486696-1271464968.1634319683"
-                           class="full-screen-menu-left-column-link">Blog
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="our-company/index.html" class="full-screen-menu-left-column-link">Our Company
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div id="full-screen-menu-right-column">
-                <div class="full-screen-menu-right-column-title">The Right Hire.<br/>Right Now.</div>
-                <div class="full-screen-menu-right-column-subtitle">Everything you need to transform your work.</div>
-                <div>
-                    <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                        <div class="full-screen-menu-right-column-menu-item">
-                            <a href="https://blog.belaysolutions.com/tag/ebooks-guides"
-                               class="full-screen-menu-right-column-link">Resources
-                                <div class="full-screen-menu-link-underline"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                        <div class="full-screen-menu-right-column-menu-item">
-                            <a href="work-with-us/index.html" class="full-screen-menu-right-column-link">Jobs
-                                <div class="full-screen-menu-link-underline"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                        <div class="full-screen-menu-right-column-menu-item">
-                            <a href="https://blog.belaysolutions.com/expert-insight-how-to-find-skilled-remote-workers-for-your-great-remote-jobs"
-                               class="full-screen-menu-right-column-link">Diversity & Inclusion
-                                <div class="full-screen-menu-link-underline"></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <ul class="social-icons-container">
-                    <li><a target="_blank" href="https://twitter.com/belay_solutions/"><i
-                                class="fab fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/belaysolutions/"><i
-                                class="fab fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/company/belay-solutions/mycompany/"><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UCyg-EUe8qjZUelkwcZMjNmQ"><i
-                                class="fab fa-youtube"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/belay_solutions/"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://open.spotify.com/show/6fFH0NLdLvBe0rUVbBOk6c"><i
-                                class="fab fa-spotify"></i></a></li>
-                    <li><a target="_blank" href="tel:18555523529"><i class="fa fa-phone"></i></a></li>
-                    <li><a target="_blank" href="get-started/index.html"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-                <p class="copyright-info">
-                    &copy; <span id="current-year"></span> {{ env('APP_NAME') }}. Made with &hearts; from the {{ env('APP_NAME') }} team.
-                </p>
-            </div>
-
-        </div>
-
-        <script>
-            // Set year in fullscreen menu
-            const d = new Date();
-            let year = d.getFullYear();
-            document.getElementById("current-year").innerHTML = year;
-        </script>
-        <script>
-            $(document).ready(function () {
-                $("body").on("click", "#close-btn", function () {
-                    $("#popup-overlay-div").remove();
-                    $("#hire-belay-pop").remove();
-                });
-            });
-        </script>
-
-    </header>
-<main id="primary" class="site-main">
-
-
-        <article id="post-800" class="post-800 page type-page status-publish has-post-thumbnail hentry">
-
-            <header id="hero" class="hero hero-type__content hero-template__other"
-                    style="background-image: url('wp-content/uploads/2022/04/2021-homepage-hero.jpg');"
-            >
-                <div class="hero-overlay"></div>
-                <div class="container above-overlay" id="gf_3">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1>The Right Hire.<br/>Right <u>Now</u>.</h1>
-                            <h5 class="secondary">AI-Empowered Virtual Assistant, Accounting, and Marketing Assistant
-                                staffing solutions.</h5>
-                            <p></p>
-                            <a class="btn" id="hero-cta-btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span><i
-                                    class="bi bi-chevron-down"></i></a></div>
-                    </div>
-                </div>
-
-</div>
 
  @yield('content')
 
 
-<!-- .entry-content -->
-</article><!-- #post-800 -->
+{{--<!-- .entry-content -->--}}
+{{--</article><!-- #post-800 -->--}}
 
-</main><!-- #main -->
+{{--</main><!-- #main -->--}}
 
 <script>!function (s, a, e, v, n, t, z) {
         if (s.saq) return;
@@ -1794,7 +1265,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div><img width="200" src="wp-content/uploads/2022/04/Primary-Logo-Green-and-Positive.png"
-                              alt="BELAY Logo"/></div>
+                              alt="{{ env('APP_NAME') }} Logo"/></div>
                     <p>The Right Hire. Right Now.</p>
                     <p>Virtual Assistants. Accounting Services. Marketing Assistants.</p>
                     <p>Made with ♥ from the {{ env('APP_NAME') }} team.</p>

@@ -1,6 +1,32 @@
 @extends('pages.layout.app')
 @section('content')
 
+    <main id="primary" class="site-main">
+
+
+        <article id="post-800" class="post-800 page type-page status-publish has-post-thumbnail hentry">
+
+            <header id="hero" class="hero hero-type__content hero-template__other"
+                    style="background-image: url('wp-content/uploads/2022/04/2021-homepage-hero.jpg');"
+            >
+                <div class="hero-overlay"></div>
+                <div class="container above-overlay" id="gf_3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>The Right Hire.<br/>Right <u>Now</u>.</h1>
+                            <h5 class="secondary">AI-Empowered Virtual Assistant, Accounting, and Marketing Assistant
+                                staffing solutions.</h5>
+                            <p></p>
+                            <a class="btn" id="hero-cta-btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span><i
+                                    class="bi bi-chevron-down"></i></a></div>
+                    </div>
+                </div>
+
+
+            </header>
+        </article>
+    </main>
+
 
  <div class="entry-content">
 
