@@ -1,4 +1,6 @@
- <header class="header">
+ <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+<header class="header">
 
         <script>
             // When the user scrolls down 1px from the top of the document, change the navbar's background opacity and the swap the logo
@@ -317,7 +319,7 @@
                 <a href="work-with-us/index.html" class="header-link">JOBS</a>
             </div>
             <div id="navbar-right">
-                <a id="belay-hire-btn" class="btn" href="get-started/index.html">Hire {{ env('APP_NAME') }}</a>
+                <a id="belay-hire-btn" class="btn" href="{{ route('get_started') }}">Hire {{ env('APP_NAME') }}</a>
 
                 <script>
                     function hamburgerMenu(x) {
@@ -380,7 +382,7 @@
             <div id="full-screen-menu-left-column">
                 <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                     <div class="full-screen-menu-left-column-menu-item">
-                        <a href="get-started/index.html" class="full-screen-menu-left-column-link">Hire {{ env('APP_NAME') }}
+                        <a href="{{ route('get_started') }}" class="full-screen-menu-left-column-link">Hire {{ env('APP_NAME') }}
                             <div class="full-screen-menu-link-underline"></div>
                         </a>
                     </div>
@@ -483,7 +485,7 @@
                     <li><a target="_blank" href="https://open.spotify.com/show/6fFH0NLdLvBe0rUVbBOk6c"><i
                                 class="fab fa-spotify"></i></a></li>
                     <li><a target="_blank" href="tel:18555523529"><i class="fa fa-phone"></i></a></li>
-                    <li><a target="_blank" href="get-started/index.html"><i class="fa fa-envelope"></i></a></li>
+                    <li><a target="_blank" href="{{ route('get_started') }}"><i class="fa fa-envelope"></i></a></li>
                 </ul>
                 <p class="copyright-info">
                     &copy; <span id="current-year"></span> {{ env('APP_NAME') }}. Made with &hearts; from the {{ env('APP_NAME') }} team.

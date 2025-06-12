@@ -1271,7 +1271,7 @@
                     <p>Made with ♥ from the {{ env('APP_NAME') }} team.</p>
                 </div>
                 <div class="col-lg-3">
-                    <p><a class="footer-menu-link" href="get-started/index.html">Get Started</a></p>
+                    <p><a class="footer-menu-link" href="{{ route('get_started') }}">Get Started</a></p>
                     <p><a class="footer-menu-link" href="services/assistants/index.html">Virtual Assistants</a></p>
                     <p><a class="footer-menu-link" href="services/accounting/index.html">Accounting Services</a></p>
                     <p><a class="footer-menu-link" href="services/marketing/index.html">Marketing Assistants</a></p>
@@ -1325,7 +1325,7 @@
                                                                                 aria-hidden="true"></i></a></li>
                         <li><a href="tel:18555523529"><span class="screen-reader-text">phone</span><i
                                     class="fa fa-phone" aria-hidden="true"></i></a></li>
-                        <li><a href="get-started/index.html"><span class="screen-reader-text">Hire {{ env('APP_NAME') }}</span><i
+                        <li><a href="{{ route('get_started') }}"><span class="screen-reader-text">Hire {{ env('APP_NAME') }}</span><i
                                     class="fa fa-envelope" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>

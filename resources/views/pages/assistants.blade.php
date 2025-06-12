@@ -2,7 +2,6 @@
 @section('content')
 
     <div id="page" class="site">
-        <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
 
        @include('pages.layout.header')
 
@@ -21,7 +20,7 @@
                                 <h5 class="secondary">Accomplish More. Juggle Less.</h5>
                                 <p></p>
                                 <a class="btn" id="hero-cta-btn"
-                                   href="../../get-started/index.html"><span>Hire BELAY</span></a></div>
+                                   href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a></div>
                         </div>
                         <div class="row hero-columns-below">
                             <div class="col-sm-12 col-md-4 col-lg-4 hero-column">
@@ -85,7 +84,7 @@
                 </div>
                 <div class="row call-to-action-row u-fade-type-down js-scroll-trigger is-active">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <a class="btn" href="../../get-started/index.html"><span>Hire BELAY</span></a>
+                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                 </div>
             </div>
@@ -257,7 +256,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <h2 class="text-center"></h2>
                         <h2>What Is a Virtual Assistant?</h2>
-                        <p class="text-center tiles-title-sub">BELAY's Virtual Assistant services provide a variety of
+                        <p class="text-center tiles-title-sub">{{ env('APP_NAME') }}'s Virtual Assistant services provide a variety of
                             solutions, including:</p>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12">
@@ -521,7 +520,7 @@
                     <div class="col-12">
                         <h2></h2>
                         <h2>What Is a Virtual Assistant?</h2>
-                        <p>BELAY's Virtual Assistant services provide a variety of solutions, including:</p>
+                        <p>{{ env('APP_NAME') }}'s Virtual Assistant services provide a variety of solutions, including:</p>
                     </div>
                 </div>
                 <div class="row">
@@ -856,9 +855,9 @@
                 <div class="row d-flex flex-row justify-content-center">
                     <div class="col-sm-6 text-left">
                         <h2 class="text-left">AI-Amplified Efficiency.<br>Human-Led Excellence.</h2>
-                        <p>BELAY Executive Assistants don’t just check tasks off a list — they think like leaders, act
+                        <p>{{ env('APP_NAME') }} Executive Assistants don’t just check tasks off a list — they think like leaders, act
                             with autonomy, and move at the speed of your priorities.<br><br>And now, they’re equipped to
-                            move even faster.<br><br>Our EAs combine C-suite experience with BELAY’s proprietary AI
+                            move even faster.<br><br>Our EAs combine C-suite experience with {{ env('APP_NAME') }}’s proprietary AI
                             tools to anticipate needs, streamline execution, and surface insights that drive better
                             decisions.<br><br>From intelligent inbox triage to proactive prep for meetings and projects,
                             every EA is empowered to use AI not for shortcuts — but for strategy. That means less
@@ -898,26 +897,26 @@
                             person to handle them?</p>
                         <p>We all want to focus on things that make the biggest impact—professionally and personally.
                             But too often, the demanding details steal our time and attention.</p>
-                        <p>It’s time to take it back with BELAY.</p>
+                        <p>It’s time to take it back with {{ env('APP_NAME') }}.</p>
                         <p></p>
                     </div>
                     <div class="col-lg-6">
                         <p></p>
-                        <p>BELAY’s AI-empowered Virtual Assistant services are pre-vetted and intentionally matched with
+                        <p>{{ env('APP_NAME') }}’s AI-empowered Virtual Assistant services are pre-vetted and intentionally matched with
                             you and your organization, saving you countless hours of managing job postings, filtering
                             candidates, and checking references. </p>
                         <p>By combining human expertise with powerful AI-enhanced tools, our assistants bring greater
                             efficiency and insight to every task. Our standards are high, and our acceptance rate is
                             lower than Harvard’s, ensuring you get the right Virtual Assistant for your needs.</p>
                         <p>So, instead of accomplishing those important (but time-consuming) administrative tasks, work
-                            with BELAY. We are a flexible staffing company you can trust—powered by people, enhanced by
+                            with {{ env('APP_NAME') }}. We are a flexible staffing company you can trust—powered by people, enhanced by
                             AI, giving you more time to focus on what matters most.</p>
                         <p></p>
                     </div>
                 </div>
                 <div class="row call-to-action-row u-fade-type-down js-scroll-trigger">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <a class="btn" href="../../get-started/index.html"><span>Hire BELAY</span></a>
+                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                 </div>
             </div>
@@ -987,7 +986,7 @@
                             </svg>
                             <h3>Step 1. Sales Call</h3>
                             <p>Meet with your Solutions Consultant to identify your exact needs and pain points and
-                                determine the right hire for you. If BELAY is a good fit, we’ll send you an agreement to
+                                determine the right hire for you. If {{ env('APP_NAME') }} is a good fit, we’ll send you an agreement to
                                 sign, and you’ll be paired with a Client Success Consultant.</p>
                         </div>
                     </div>
@@ -1173,7 +1172,7 @@
 </svg>
                             <h3>Step 2. Discovery Call</h3>
                             <p>Meet with your Client Success Consultant to deep dive into your tasks, tools, culture,
-                                and personality requirements to ensure we match you with the right BELAY
+                                and personality requirements to ensure we match you with the right {{ env('APP_NAME') }}
                                 Professional.</p>
                         </div>
                     </div>
@@ -1293,28 +1292,28 @@
                                       d="M278.7,114.4c-2.4,.6-4.8-.9-5.4-3.4-11.2-47.5-53.1-80.6-101.8-80.6S80.8,63.5,69.7,111c-.5,2.1-2.4,3.5-4.4,3.5-.4,0-.7-.1-1.1-.1-2.4-.6-4-3-3.4-5.4,5.8-24.6,19.8-46.8,39.6-62.7,20-16.1,45.3-24.9,71.1-24.9s51,8.9,71,24.9c19.8,15.8,33.8,38.1,39.6,62.7,.6,2.4-.9,4.8-3.4,5.4ZM80,198.8c-2.8-7.1-5.7-14.4-7.8-21.9-3.5-12.3-5.3-26.4-5.3-41.8,0-2.5-2-4.5-4.5-4.5s-4.5,2-4.5,4.5c0,16.3,1.9,31.2,5.7,44.4,2.2,7.8,5.3,15.4,8.1,22.7,4.1,10.4,8.1,20.3,10,31.1,3.2,17.9,5.8,34.1,4.6,51.1-.7,9.1-3,16.4-6.7,21.5-1.5,2-1.1,4.8,.9,6.3,.8,.6,1.7,.9,2.7,.9,1.4,0,2.7-.6,3.7-1.9,4.8-6.5,7.6-15.3,8.4-26.1,1.4-18.1-1.4-35.6-4.7-53.4-2.1-11.8-6.4-22.5-10.6-32.9Zm67.8-71.4c1.2,.8,1.9,2.2,1.9,3.7s-.7,2.9-1.9,3.7l-19.5,13.6c-.7,.5-1.7,.8-2.6,.8-.7,0-1.4-.1-2.1-.5-1.4-.8-2.4-2.3-2.4-4v-9.4c-25.6-2-89.3-9.3-89.3-30.7,0-8,8.1-14.5,25-19.9,2.4-.8,4.9,.6,5.7,3,.7,2.4-.6,4.9-3,5.7-14.8,4.8-18.7,9.3-18.7,11.2,0,2.1,4.7,7.1,22,12.2,14.6,4.3,35.2,7.6,58.3,9.4v-8.7c0-1.7,.9-3.2,2.4-4s3.3-.6,4.7,.4l19.5,13.5Zm-10.5,3.6l-7.1-4.9v9.9l7.1-5Zm145.2,78.3c.4,0,.6,0,.9-.1,19.4-4.1,28.4-9,29.5-16,.6-4.7-2.7-8.4-6-10.3l-21.8-16.6v-31.3c0-2.5-2.1-4.5-4.5-4.5s-4.5,2-4.5,4.5v33.6c0,1.4,.6,2.7,1.8,3.6l23.8,18.1c.2,.1,.4,.3,.6,.4,.4,.2,1.2,.9,1.5,1.4-.6,.8-4.1,4.4-21.7,8.2h-2c-1.4,0-2.6,.6-3.5,1.5-7.2,8.4-3.7,16.1-.9,22.3,.9,1.9,1.7,3.8,2.3,5.7,.4,1,.7,1.9,1,2.8s.7,1.9,.9,2.7c-.1,0-.2,.1-.4,.1-12.4,3.5-19.5,3.1-31.2,2-2.5-.2-4.7,1.6-5,4.1-.2,2.4,1.7,4.7,4.1,4.9,5,.5,9.3,.8,13.5,.8,3.6,0,7.2-.2,11.1-.9,1.2-1.5,3.4-2.1,5.3-1.3q.1,.1,.3,.2c1.4-.4,2.8-.7,4.3-1.2,3-.9,5.1-2.4,6.2-4.5,1.7-3.4,.4-6.9-.6-10-.3-.8-.6-1.7-.8-2.4-.8-2.4-1.8-4.7-2.7-6.8-2.5-5.5-3.5-8.1-1.7-11.1h.2v.1Zm-4.8,36c-.1-.1-.2-.1-.3-.2-1.9-.8-4.1-.2-5.3,1.3-.3,.3-.5,.6-.6,1-2.8,6.4-4.5,13-6.2,19.4-1.7,6.3-3.2,12.2-5.7,17.9-4,9.2-15.8,8.5-30.8,6.6-2.5-.4-5-.6-7.1-.8-18-1.5-80.9-22.7-94-47.3-3.1-5.9-3.1-11.5,.1-17.1,1.2-2.2,.5-4.9-1.7-6.2-2.2-1.2-4.9-.4-6.1,1.7-4.7,8.3-4.8,17.2-.2,25.9,8.6,16.1,31.8,28.8,49.8,36.6,9.1,4,18.4,7.3,26.7,9.9v39.6c0,2.5,2,4.5,4.5,4.5s4.5-2,4.5-4.5v-37.1c6.6,1.7,12,2.7,15.6,3.1,2,.1,4.3,.4,6.8,.8,4.5,.6,9.9,1.2,15.1,1.2,10.2,0,20.4-2.5,25.1-13.1,2.8-6.3,4.5-12.9,6.1-19.2,1.7-6.3,3.2-12.3,5.8-18.1,.9-2.3-.1-4.8-2.1-5.9Zm8.6-159.4c-2.4-.9-5,.4-5.8,2.7-.9,2.4,.4,5,2.7,5.8,12.9,4.5,16.3,8.6,16.3,10.4,0,4.1-15.3,14.2-62,19.9v-8.6c0-1.7-.9-3.2-2.4-4s-3.3-.6-4.7,.3l-19.4,13.7c-1.2,.8-1.9,2.2-1.9,3.7s.7,2.9,1.9,3.7l19.5,13.7c.7,.5,1.7,.8,2.6,.8,.7,0,1.4-.1,2.1-.5,1.4-.8,2.4-2.3,2.4-4v-9.6c28.3-3.3,71-11.3,71-29,0-7.5-7.3-13.8-22.3-19Zm7.8-40.2l-3.6,15.7-2.5-15.9-15-3.7,15.2-2.7,3.6-15.7,2.5,15.9,15,3.7-15.2,2.7Zm14.2,30.2l-2.4,10.3-1.6-10.4-9.8-2.4,10-1.7,2.4-10.3,1.6,10.4,9.8,2.4-10,1.7ZM45.2,263.1l-4.1,17-2.9-17.3-17-4.1,17.3-2.9,4.1-17,2.9,17.3,17,4.1-17.3,2.9Zm16.2,32.9l-2.7,11.1-1.9-11.3-11.1-2.7,11.3-1.9,2.7-11.1,1.9,11.3,11.1,2.7-11.3,1.9Z"></path>
                             </svg>
                             <h3>Step 6. Nurturing</h3>
-                            <p>You will have ongoing check-ins to support both you and your BELAY Professional
-                                throughout your partnership with BELAY.</p>
+                            <p>You will have ongoing check-ins to support both you and your {{ env('APP_NAME') }} Professional
+                                throughout your partnership with {{ env('APP_NAME') }}.</p>
                         </div>
                     </div>
 
                 </div>
                 <div class="row call-to-action-row u-fade-type-down js-scroll-trigger">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <a class="btn" href="../../get-started/index.html"><span>Hire BELAY</span></a>
+                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section id="Hire BELAY Steps Section Title" class="talk-to-sales-steps" style="background-color:#d7eafd;">
+        <section id="Hire {{ env('APP_NAME') }} Steps Section Title" class="talk-to-sales-steps" style="background-color:#d7eafd;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-4 left-column">
                         <h2 class="text-left"></h2>
-                        <h2 style="text-align: left;">The BELAY Difference</h2>
-                        <a class="btn u-fade-type-down js-scroll-trigger" href="../../get-started/index.html"><span>Hire BELAY</span></a>
+                        <h2 style="text-align: left;">The {{ env('APP_NAME') }} Difference</h2>
+                        <a class="btn u-fade-type-down js-scroll-trigger" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-8 right-column layout-2">
                         <div class="boxed-column boxed-hover-on">
@@ -1457,7 +1456,7 @@
                 <div class="row">
                     <div class="col-lg-12" style="padding: 5em 0;">
                         <h3 style="width: 60%; text-align: center; margin: auto; padding-top: 100px; margin-bottom: -100px;">
-                            Learn How BELAY Clients Leverage Their Virtual Assistants to Accomplish More</h3>
+                            Learn How {{ env('APP_NAME') }} Clients Leverage Their Virtual Assistants to Accomplish More</h3>
                     </div>
                 </div>
             </div>
@@ -1594,15 +1593,15 @@
                                          class="testimonial-icon fa-quote-left" draggable="false">
                                     <p class="text-left testimonial-caption">It’s always a win when you have a great
                                         person who joins your team in any position. But I think even more so in this
-                                        position [of VA] because [my BELAY VA] has a lot of access to our practice and
-                                        to things in my life. There are things that [my BELAY VA] knows about my life
+                                        position [of VA] because [my {{ env('APP_NAME') }} VA] has a lot of access to our practice and
+                                        to things in my life. There are things that [my {{ env('APP_NAME') }} VA] knows about my life
                                         that no one else in this practice knows. And that’s a testament to the type of
                                         trust that you have to build.<br>
                                         <br>
                                         She helps me to be more productive because I’m able to just focus on the things
                                         that I want to get done. [She] makes my life better. So those things make me
                                         really just recommend to anyone who’s thinking about getting an assistant
-                                        through BELAY.</p>
+                                        through {{ env('APP_NAME') }}.</p>
                                     <div class="row testimonial-attribution">
                                         <img src="../../wp-content/uploads/2023/09/leisle-chung-crop.png"
                                              class="testimonial-photo" draggable="false">
@@ -1623,7 +1622,7 @@
                                         that are more impactful. It has helped me become a better leader and ultimately
                                         a better communicator with the other team members.<br>
                                         <br>
-                                        The machine that BELAY has created — the selection process, the onboarding
+                                        The machine that {{ env('APP_NAME') }} has created — the selection process, the onboarding
                                         process, the information gathered ahead of time — has contributed to huge
                                         success, and it’s impressive. I’ve talked to a lot of people about it, and I’m a
                                         fan.</p>
@@ -1673,15 +1672,15 @@
                                          class="testimonial-icon fa-quote-left" draggable="false">
                                     <p class="text-left testimonial-caption">It’s always a win when you have a great
                                         person who joins your team in any position. But I think even more so in this
-                                        position [of VA] because [my BELAY VA] has a lot of access to our practice and
-                                        to things in my life. There are things that [my BELAY VA] knows about my life
+                                        position [of VA] because [my {{ env('APP_NAME') }} VA] has a lot of access to our practice and
+                                        to things in my life. There are things that [my {{ env('APP_NAME') }} VA] knows about my life
                                         that no one else in this practice knows. And that’s a testament to the type of
                                         trust that you have to build.<br>
                                         <br>
                                         She helps me to be more productive because I’m able to just focus on the things
                                         that I want to get done. [She] makes my life better. So those things make me
                                         really just recommend to anyone who’s thinking about getting an assistant
-                                        through BELAY.</p>
+                                        through {{ env('APP_NAME') }}.</p>
                                     <div class="row testimonial-attribution">
                                         <img src="../../wp-content/uploads/2023/09/leisle-chung-crop.png"
                                              class="testimonial-photo" draggable="false">
@@ -1782,7 +1781,7 @@
         </script>
 
 
-        <section id="Hire BELAY Banner Section Title" class="talk-to-sales-banner">
+        <section id="Hire {{ env('APP_NAME') }} Banner Section Title" class="talk-to-sales-banner">
             <div class="container">
                 <div class="row d-flex flex-row justify-content-center">
                     <div class="col-sm-6 text-left">
@@ -1794,7 +1793,7 @@
                     <div class="col-sm-6 text-right d-flex flex-column justify-content-center">
                         <div class="outter-button d-flex flex-row justify-content-end">
                             <a class="btn u-fade-type-down js-scroll-trigger" href="../../get-started/index.html">Hire
-                                BELAY<i class="bi bi-arrow-right"></i></a>
+                                {{ env('APP_NAME') }}<i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1809,7 +1808,7 @@
                         <h2 class="text-left"></h2>
                         <h2 style="text-align: left;">Got a question about Virtual Assistants?<br>No problem.</h2>
                         <p class="text-left">Our team is here to help!</p>
-                        <a class="btn" href="../../get-started/index.html"><span>Hire BELAY</span></a></div>
+                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a></div>
                     <div class="col-sm-12 col-md-12 col-lg-7 right-column">
                         <div id="faq-accordion">
                             <div class="card">
@@ -2041,7 +2040,7 @@
                                     <div class="card-body">
                                         <p>Yes, you will be assigned a Client Success Consultant who will walk through
                                             onboarding with you and who is there as a coach and resource for your entire
-                                            time here at BELAY.</p>
+                                            time here at {{ env('APP_NAME') }}.</p>
                                     </div>
                                 </div>
                             </div>

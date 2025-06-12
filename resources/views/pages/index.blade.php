@@ -17,7 +17,7 @@
                             <h5 class="secondary">AI-Empowered Virtual Assistant, Accounting, and Marketing Assistant
                                 staffing solutions.</h5>
                             <p></p>
-                            <a class="btn" id="hero-cta-btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span><i
+                            <a class="btn" id="hero-cta-btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span><i
                                     class="bi bi-chevron-down"></i></a></div>
                     </div>
                 </div>
@@ -647,7 +647,7 @@
             </div>
             <div class="row call-to-action-row">
                 <div class="col-lg-12 d-flex justify-content-center">
-                    <a class="btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
+                    <a class="btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a>
                 </div>
             </div>
         </div>
@@ -721,7 +721,7 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8 text-center">
                     <h2 class="text-center">Getting started is the easiest thing you’ll do today.</h2>
-                    <a class="btn" href="get-started/index.html">Hire {{ env('APP_NAME') }}</a>
+                    <a class="btn" href="{{ route('get_started') }}">Hire {{ env('APP_NAME') }}</a>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -734,7 +734,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4 left-column">
                     <h2 class="text-left">The {{ env('APP_NAME') }} Difference</h2>
-                    <a class="btn" href="get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a></div>
+                    <a class="btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a></div>
                 <div class="col-sm-12 col-md-12 col-lg-8 right-column layout-2">
                     <div class="boxed-column boxed-hover-on">
                         <div class="boxed-column-inner gradient-icon-parent layout-center">
@@ -1202,7 +1202,7 @@
                 </div>
                 <div class="col-sm-6 text-right d-flex flex-column justify-content-center">
                     <div class="outter-button d-flex flex-row justify-content-end">
-                        <a class="btn" href="get-started/index.html">Hire {{ env('APP_NAME') }}<i class="bi bi-arrow-right"></i></a>
+                        <a class="btn" href="{{ route('get_started') }}">Hire {{ env('APP_NAME') }}<i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
