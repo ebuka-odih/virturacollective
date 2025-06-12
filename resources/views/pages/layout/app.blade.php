@@ -1264,21 +1264,24 @@
         <div class="container main-footer-content-container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div><img width="200" src="wp-content/uploads/2022/04/Primary-Logo-Green-and-Positive.png"
-                              alt="{{ env('APP_NAME') }} Logo"/></div>
+                    <div>
+                        <h3>{{ env('APP_NAME') }}</h3>
+{{--                        <img width="200" src="wp-content/uploads/2022/04/Primary-Logo-Green-and-Positive.png"--}}
+{{--                              alt="{{ env('APP_NAME') }} Logo"/>--}}
+                    </div>
                     <p>The Right Hire. Right Now.</p>
                     <p>Virtual Assistants. Accounting Services. Marketing Assistants.</p>
                     <p>Made with ♥ from the {{ env('APP_NAME') }} team.</p>
                 </div>
                 <div class="col-lg-3">
                     <p><a class="footer-menu-link" href="{{ route('get_started') }}">Get Started</a></p>
-                    <p><a class="footer-menu-link" href="services/assistants/index.html">Virtual Assistants</a></p>
-                    <p><a class="footer-menu-link" href="services/accounting/index.html">Accounting Services</a></p>
-                    <p><a class="footer-menu-link" href="services/marketing/index.html">Marketing Assistants</a></p>
+                    <p><a class="footer-menu-link" href="{{ route('assistants') }}">Virtual Assistants</a></p>
+                    <p><a class="footer-menu-link" href="{{ route('accounting') }}">Accounting Services</a></p>
+                    <p><a class="footer-menu-link" href="{{ route('marketing') }}">Marketing Assistants</a></p>
                 </div>
                 <div class="col-lg-3">
-                    <p><a class="footer-menu-link" href="https://blog.belaysolutions.com/">More Resources</a></p>
-                    <p><a class="footer-menu-link" href="https://blog.belaysolutions.com/">Read Our Blog</a></p>
+{{--                    <p><a class="footer-menu-link" href="https://blog.belaysolutions.com/">More Resources</a></p>--}}
+{{--                    <p><a class="footer-menu-link" href="https://blog.belaysolutions.com/">Read Our Blog</a></p>--}}
                     <p><a class="footer-menu-link" href="podcast/index.html">One Next Step Podcast</a></p>
                     <p><a class="footer-menu-link" href="our-company/index.html">Our Company</a></p>
                     <p><a class="footer-menu-link" href="work-with-us/index.html">Jobs</a></p>
@@ -1290,7 +1293,7 @@
             <div class="row" style="padding: 20px 10px; color: #02293d; background: white; width: 100%;">
                 <p style="max-width: 1240px; margin: 1em auto;"><span
                         style="color: #02293d; background: #12d678; text-transform: uppercase; max-width: 800px; padding: 5px; font-weight: bold; font-family: sans-serif;">Imitated but Never Duplicated:</span>
-                    Please note that our official site - <span style="color: #12d678;"><em><strong>www.belaysolutions.com</strong></em></span>
+                    Please note that our official site - <span style="color: #12d678;"><em><strong>www.virturacollective.com</strong></em></span>
                     - and our official emails - are the <span style="color: #12d678;"><strong>only</strong></span>
                     places from which we will ever recruit and initiate sales. We'll never ask for money during our
                     application or hiring process, and we'll never offer you a job over text message or social media.

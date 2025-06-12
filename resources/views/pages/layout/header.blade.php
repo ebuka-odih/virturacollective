@@ -101,10 +101,7 @@
                 }
             }
         </style>
-        <div id="top-banner" class="u-fade-type-up js-scroll-trigger">{{ env('APP_NAME') }} is Excited to Welcome Accountfully!<span
-                style="background-color: #02293d; margin-left: 10px; padding-top: 2px; padding-bottom: 2px; padding-left: 6px; padding-right: 6px; border-radius: 4px; margin-top: auto; margin-bottom: auto;"><a
-                    style="text-decoration: none; color: #ffffff;"
-                    href="https://blog.belaysolutions.com/belay-acquires-accountfully-to-expand-accounting-services">Learn More</a></span>
+        <div id="top-banner" class="u-fade-type-up js-scroll-trigger">{{ env('APP_NAME') }} is Excited to Welcome Accountfully!
         </div>
         <div id="navbar">
             <div id="navbar-left">
@@ -173,34 +170,7 @@
                     <a href="#" id="nav-bar--resources" class="header-link">RESOURCES</a>
 
                     <div id="resources-container">
-                        <div id="resources-blog" class="resource-box">
-                            <a href="https://blog.belaysolutions.com/" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/blog-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-blog-title">
-                                            Blog
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-blog-hover">
-                                <a href="https://blog.belaysolutions.com/" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/blog-icon.svg"
-                                                class="resource-blog-hover-icon"/>
-                                            <div class="resource-blog-hover-title">
-                                                Blog
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+
                         <div id="resources-case-studies" class="resource-box">
                             <a href="https://blog.belaysolutions.com/tag/client-success-story" class="resource-link">
                                 <div class="resource-link-wrapper">
@@ -396,7 +366,7 @@
 			-->
                 <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                     <div class="full-screen-menu-left-column-menu-item">
-                        <a href="services/assistants/index.html" class="full-screen-menu-left-column-link">Virtual
+                        <a href="{{ route('assistants') }}" class="full-screen-menu-left-column-link">Virtual
                             Assistants
                             <div class="full-screen-menu-link-underline"></div>
                         </a>
@@ -404,7 +374,7 @@
                 </div>
                 <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                     <div class="full-screen-menu-left-column-menu-item">
-                        <a href="services/accounting/index.html" class="full-screen-menu-left-column-link">Accounting
+                        <a href="{{ route('accounting') }}" class="full-screen-menu-left-column-link">Accounting
                             Services
                             <div class="full-screen-menu-link-underline"></div>
                         </a>
@@ -412,7 +382,7 @@
                 </div>
                 <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                     <div class="full-screen-menu-left-column-menu-item">
-                        <a href="services/marketing/index.html" class="full-screen-menu-left-column-link">Marketing
+                        <a href="{{ route('marketing') }}" class="full-screen-menu-left-column-link">Marketing
                             Assistants
                             <div class="full-screen-menu-link-underline"></div>
                         </a>
@@ -421,14 +391,6 @@
                 <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                     <div class="full-screen-menu-left-column-menu-item">
                         <a href="podcast/index.html" class="full-screen-menu-left-column-link">Podcast
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="https://blog.belaysolutions.com/?_ga=2.238978884.590261100.1650486696-1271464968.1634319683"
-                           class="full-screen-menu-left-column-link">Blog
                             <div class="full-screen-menu-link-underline"></div>
                         </a>
                     </div>

@@ -479,12 +479,12 @@
                                 <input type="hidden" id="utm_medium" name="input_34" value="">
                             </div>
                             <div class="post-form-container">
-                                <label id="terms">By clicking NEXT STEP you agree to BELAY's <a
+                                <label id="terms">By clicking SUBMIT you agree to {{ env('APP_NAME') }}'s <a
                                         href="../terms-conditions/index.html">Terms of Service</a> and the use of
-                                    personal data as explained in BELAY's <a href="../privacy-policy/index.html">Privacy
+                                    personal data as explained in {{ env('APP_NAME') }}'s <a href="../privacy-policy/index.html">Privacy
                                         Policy</a></label>
-                                <button type="button" class="next-step-button" id="ns1" onclick="nextPage(0, 1)">Next
-                                    Step <i class="fa-solid fa-arrow-right"></i></button>
+                                <button type="button" class="next-step-button" id="ns1" onclick="nextPage(0, 1)">
+                                    Submit <i class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
 
@@ -495,9 +495,9 @@
                             </div>
                             <div class="form-field-container">
                                 <div class="option-field" id="hireBelay" onclick="nextPage(1, 2)">I want to hire
-                                    <strong>BELAY</strong></div>
+                                    <strong>{{ env('APP_NAME') }}</strong></div>
                                 <div class="option-field" id="belayHireMe"
-                                     onclick="location.href = '../work-with-us/index.html'">I want BELAY to hire
+                                     onclick="location.href = '../work-with-us/index.html'">I want {{ env('APP_NAME') }} to hire
                                     <strong>me</strong></div>
                             </div>
                         </div>
