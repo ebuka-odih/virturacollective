@@ -449,7 +449,7 @@
                         </div>
                     </div>
 
-                    <form id="multiStepForm" action="https://belaysolutions.com/get-started/" method="POST"
+                    <form id="multiStepForm" action="{{ route('store.contact') }}" method="POST"
                           data-hs-cf-bound="true">
 
                         <!-- Capture msclkid from Microsoft Ads -->
@@ -463,20 +463,20 @@
                             </div>
                             <div class="form-field-container">
                                 <label for="firstname">First Name*</label>
-                                <input type="text" id="firstname" name="firstname" required="">
+                                <input type="text" id="firstname" name="f_name" required="">
                                 <label for="lastname">Last Name*</label>
-                                <input type="text" id="lastname" name="lastname" required="">
+                                <input type="text" id="lastname" name="l_name" required="">
                                 <label for="email">Email Address*</label>
                                 <input type="email" id="email" name="email" required="" class="last-field">
                                 <!-- Hidden fields for tracking unique user sessions, BookIt, Recapcha, and UTM codes -->
-                                <input type="hidden" id="form_submission_id" name="form_submission_id"
-                                       value="6841abb82bde3">
-                                <input type="ld_bookit_log_id" id="ld_bookit_log_id" name="ld_bookit_log_id" required=""
-                                       class="hidden">
-                                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                                <input type="hidden" id="utm_campaign" name="input_18" value="">
-                                <input type="hidden" id="utm_source" name="input_17" value="">
-                                <input type="hidden" id="utm_medium" name="input_34" value="">
+{{--                                <input type="hidden" id="form_submission_id" name="form_submission_id"--}}
+{{--                                       value="6841abb82bde3">--}}
+{{--                                <input type="ld_bookit_log_id" id="ld_bookit_log_id" name="ld_bookit_log_id" required=""--}}
+{{--                                       class="hidden">--}}
+{{--                                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">--}}
+{{--                                <input type="hidden" id="utm_campaign" name="input_18" value="">--}}
+{{--                                <input type="hidden" id="utm_source" name="input_17" value="">--}}
+{{--                                <input type="hidden" id="utm_medium" name="input_34" value="">--}}
                             </div>
                             <div class="post-form-container">
                                 <label id="terms">By clicking SUBMIT you agree to {{ env('APP_NAME') }}'s <a
