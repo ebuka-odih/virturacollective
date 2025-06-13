@@ -21,7 +21,7 @@ class ContactUsController extends Controller
         $data->l_name = $request->input('l_name');
         $data->email = $request->input('email');
         $data->save();
-        Mail::to('admin@virtualcollective.com')->send(new ContactUsMail($data));
+        Mail::to('contact@virturacollective.com')->send(new ContactUsMail($data));
         return redirect()->back()->with('success', 'Your details has been sent successfully!');
     }
 }
