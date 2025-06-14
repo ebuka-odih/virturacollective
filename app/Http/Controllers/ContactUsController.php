@@ -13,12 +13,14 @@ class ContactUsController extends Controller
         $request->validate([
             'f_name' => 'required|string',
             'l_name' => 'required|string',
+            'phone' => 'required|string',
             'email' => 'required|string',
         ]);
 
         $data = new ContactUs();
         $data->f_name = $request->input('f_name');
         $data->l_name = $request->input('l_name');
+        $data->phone = $request->input('phone');
         $data->email = $request->input('email');
         $data->save();
         Mail::to('contact@virturacollective.com')->send(new ContactUsMail($data));

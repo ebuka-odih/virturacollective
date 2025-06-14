@@ -466,8 +466,11 @@
                                 <input type="text" id="firstname" name="f_name" required="">
                                 <label for="lastname">Last Name*</label>
                                 <input type="text" id="lastname" name="l_name" required="">
+                                <label for="email">Phone Number*</label>
+                                <input type="tel" id="email" name="phone" required="" class="last-field">
                                 <label for="email">Email Address*</label>
                                 <input type="email" id="email" name="email" required="" class="last-field">
+
                                 <!-- Hidden fields for tracking unique user sessions, BookIt, Recapcha, and UTM codes -->
 {{--                                <input type="hidden" id="form_submission_id" name="form_submission_id"--}}
 {{--                                       value="6841abb82bde3">--}}

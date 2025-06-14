@@ -23,6 +23,7 @@
 
             <p><strong>First Name:</strong> {{ $data->f_name ?? '-' }}</p>
             <p><strong>Last Name:</strong> {{ $data->l_name ?? '-' }}</p>
+            <p><strong>Phone:</strong> {{ $data->phone ?? '-' }}</p>
             <p><strong>Email:</strong> <a href="mailto:{{ $data->email }}">{{ $data->email }}</a></p>
         </div>
 
