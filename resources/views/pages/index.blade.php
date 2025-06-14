@@ -850,21 +850,7 @@
         </div>
     </div>
 
-    <section id="video-full-width-section-title" class="video-full-width">
-        <div class="vid-background-image"
-             style="background-image: url('wp-content/uploads/2022/04/video-background.jpg');"></div>
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 d-flex flex-column justify-content-flex-center">
-                    <h4>Don’t Just Take It From Us</h4>
-                    <h2>Hear From Our Clients</h2>
-                    <a href="#" class="text-center open-full-screen open-full-screen-video"><i
-                            class="bi bi-play-circle"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <script>
         $(".open-full-screen-video").click(function (e) {
