@@ -1102,7 +1102,8 @@
         z = a.getElementsByTagName(e)[0];
         z.parentNode.insertBefore(t, z)
     }(window, document, 'script', 'https://tags.srv.stackadapt.com/events.js');
-    saq('ts', 'xv90JNIEBejnlcvUTuyVpg');</script>
+    saq('ts', 'xv90JNIEBejnlcvUTuyVpg');
+</script>
 
 <script>
     // Add fade in up animation to all sections

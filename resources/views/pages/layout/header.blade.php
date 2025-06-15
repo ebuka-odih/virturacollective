@@ -166,127 +166,10 @@
                     </div>
                 </div>
 
-                <div id="resources-link-container">
-                    <a href="#" id="nav-bar--resources" class="header-link">RESOURCES</a>
 
-                    <div id="resources-container">
+                <a href="work-with-us/index.html" class="header-link"> About {{ env('APP_NAME') }}</a>
+                <a href="work-with-us/index.html" class="header-link">Contact Us</a>
 
-                        <div id="resources-case-studies" class="resource-box">
-                            <a href="https://blog.belaysolutions.com/tag/client-success-story" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/case-studies-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-case-studies-title">
-                                            Case<br/ >Studies
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-case-studies-hover">
-                                <a href="https://blog.belaysolutions.com/tag/client-success-story"
-                                   class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/case-studies-icon.svg"
-                                                class="resource-case-studies-hover-icon"/>
-                                            <div class="resource-case-studies-hover-title">
-                                                Case<br/ >Studies
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="resources-ebooks" class="resource-box">
-                            <a href="https://blog.belaysolutions.com/tag/ebooks-guides" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/ebooks-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-ebooks-title">
-                                            eBooks<br/ >&<br/>Guides
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-ebooks-hover">
-                                <a href="https://blog.belaysolutions.com/tag/ebooks-guides" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/ebooks-icon.svg"
-                                                class="resource-ebooks-hover-icon"/>
-                                            <div class="resource-ebooks-hover-title">
-                                                eBooks<br/ >&<br/>Guides
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="resources-courses" class="resource-box">
-                            <a href="courses/index.html" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/courses-icon.svg"
-                                            class="resource-icon"/>
-                                        <div class="resource-courses-title">
-                                            Courses
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-courses-hover">
-                                <a href="courses/index.html" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/courses-icon.svg"
-                                                class="resource-courses-hover-icon"/>
-                                            <div class="resource-courses-hover-title">
-                                                Courses
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="resources-podcast" class="resource-box">
-                            <a href="podcast/index.html" class="resource-link">
-                                <div class="resource-link-wrapper">
-                                    <div class="resource-display">
-                                        <img
-                                            src="https://f.hubspotusercontent10.net/hubfs/4611466/Landing Page Template/podcast-icon.svg"
-                                            class="resource-podcast-icon"/>
-                                        <div class="resource-podcast-title">
-                                            Podcast
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div id="resources-podcast-hover">
-                                <a href="podcast/index.html" class="resource-link">
-                                    <div class="resource-link-hover-wrapper">
-                                        <div class="resource-hover-display">
-                                            <img
-                                                src="https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Landing Page Template/podcast-color-icon.svg"
-                                                class="resource-podcast-hover-icon"/>
-                                            <div class="resource-podcast-hover-title">
-                                                Podcast
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="work-with-us/index.html" class="header-link">JOBS</a>
             </div>
             <div id="navbar-right">
                 <a id="belay-hire-btn" class="btn" href="{{ route('get_started') }}">Hire {{ env('APP_NAME') }}</a>
@@ -338,7 +221,7 @@
 
                 </script>
 
-                <div class="hamburger-icon-container" onclick="hamburgerMenu(this)">
+                <div style="display: none" class="hamburger-icon-container" onclick="hamburgerMenu(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -410,45 +293,21 @@
                     <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                         <div class="full-screen-menu-right-column-menu-item">
                             <a href="https://blog.belaysolutions.com/tag/ebooks-guides"
-                               class="full-screen-menu-right-column-link">Resources
+                               class="full-screen-menu-right-column-link">About {{ env('APP_NAME') }}
                                 <div class="full-screen-menu-link-underline"></div>
                             </a>
                         </div>
                     </div>
                     <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                         <div class="full-screen-menu-right-column-menu-item">
-                            <a href="work-with-us/index.html" class="full-screen-menu-right-column-link">Jobs
+                            <a href="work-with-us/index.html" class="full-screen-menu-right-column-link">Contact Us
                                 <div class="full-screen-menu-link-underline"></div>
                             </a>
                         </div>
                     </div>
-                    <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                        <div class="full-screen-menu-right-column-menu-item">
-                            <a href="https://blog.belaysolutions.com/expert-insight-how-to-find-skilled-remote-workers-for-your-great-remote-jobs"
-                               class="full-screen-menu-right-column-link">Diversity & Inclusion
-                                <div class="full-screen-menu-link-underline"></div>
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
 
-
-                <ul class="social-icons-container">
-                    <li><a target="_blank" href="https://twitter.com/belay_solutions/"><i
-                                class="fab fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/belaysolutions/"><i
-                                class="fab fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/company/belay-solutions/mycompany/"><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UCyg-EUe8qjZUelkwcZMjNmQ"><i
-                                class="fab fa-youtube"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/belay_solutions/"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://open.spotify.com/show/6fFH0NLdLvBe0rUVbBOk6c"><i
-                                class="fab fa-spotify"></i></a></li>
-                    <li><a target="_blank" href="tel:18555523529"><i class="fa fa-phone"></i></a></li>
-                    <li><a target="_blank" href="{{ route('get_started') }}"><i class="fa fa-envelope"></i></a></li>
-                </ul>
                 <p class="copyright-info">
                     &copy; <span id="current-year"></span> {{ env('APP_NAME') }}. Made with &hearts; from the {{ env('APP_NAME') }} team.
                 </p>
