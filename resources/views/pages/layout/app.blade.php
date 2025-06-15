@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en-US">
 
-<!-- Mirrored from belaysolutions.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Jun 2025 11:35:27 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
@@ -23,20 +21,18 @@
     <meta property="og:title" content="{{ env('APP_NAME') }}: Virtual Assistants &amp; Accounting Services to Serve You"/>
     <meta property="og:description"
           content="Whether you need a Virtual Assistant, Accounting, or Marketing Assistant Services, we&#039;re ready to help you find the perfect match."/>
-    <meta property="og:url" content="https://belaysolutions.com/"/>
     <meta property="og:site_name" content="{{ env('APP_NAME') }} Solutions"/>
     <meta property="article:modified_time" content="2025-04-25T11:07:37+00:00"/>
-    <meta property="og:image" content="https://belaysolutions.com/wp-content/uploads/2022/04/belay-og.png"/>
-    <meta property="og:image:width" content="1000"/>
-    <meta property="og:image:height" content="1000"/>
-    <meta property="og:image:type" content="image/png"/>
-    <meta name="twitter:card" content="summary_large_image"/>
+{{--    <meta property="og:image" content="https://belaysolutions.com/wp-content/uploads/2022/04/belay-og.png"/>--}}
+{{--    <meta property="og:image:width" content="1000"/>--}}
+{{--    <meta property="og:image:height" content="1000"/>--}}
+{{--    <meta property="og:image:type" content="image/png"/>--}}
+{{--    <meta name="twitter:card" content="summary_large_image"/>--}}
     <!-- / Yoast SEO plugin. -->
 
 
     <link rel='dns-prefetch' href='http://js.hs-scripts.com/'/>
     <link rel='dns-prefetch' href='http://kit.fontawesome.com/'/>
-    <link rel='dns-prefetch' href='http://www.googletagmanager.com/'/>
     <link rel="alternate" type="application/rss+xml" title="{{ env('APP_NAME') }} Solutions &raquo; Feed" href="feed/index.html"/>
     <link rel="alternate" type="application/rss+xml" title="{{ env('APP_NAME') }} Solutions &raquo; Comments Feed"
           href="comments/feed/index.html"/>
@@ -1309,29 +1305,7 @@
                             href="https://blog.belaysolutions.com/expert-insight-how-to-find-skilled-remote-workers-for-your-great-remote-jobs">Diversity
                             &amp; Inclusion</a></p>
                 </div>
-                <div class="col-lg-7">
-                    <ul class="social">
-                        <li><a target="_blank" href="https://facebook.com/belaysolutions/"><span
-                                    class="screen-reader-text">facebook</span><i class="fa fa-facebook"
-                                                                                 aria-hidden="true"></i></a></li>
-                        <li><a target="_blank" href="https://linkedin.com/company/2408924"><span
-                                    class="screen-reader-text">linkedin</span><i class="fa fa-linkedin"
-                                                                                 aria-hidden="true"></i></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/channel/UCyg-EUe8qjZUelkwcZMjNmQ"><span
-                                    class="screen-reader-text">youtube</span><i class="fa fa-youtube-play"
-                                                                                aria-hidden="true"></i></a></li>
-                        <li><a target="_blank" href="https://instagram.com/belay_solutions/"><span
-                                    class="screen-reader-text">instagram</span><i class="fa fa-instagram"
-                                                                                  aria-hidden="true"></i></a></li>
-                        <li><a target="_blank" href="https://open.spotify.com/show/6fFH0NLdLvBe0rUVbBOk6c"><span
-                                    class="screen-reader-text">spotify</span><i class="fa fa-spotify"
-                                                                                aria-hidden="true"></i></a></li>
-                        <li><a href="tel:18555523529"><span class="screen-reader-text">phone</span><i
-                                    class="fa fa-phone" aria-hidden="true"></i></a></li>
-                        <li><a href="{{ route('get_started') }}"><span class="screen-reader-text">Hire {{ env('APP_NAME') }}</span><i
-                                    class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
+
             </div>
         </div>
     </div><!-- .site-info -->
