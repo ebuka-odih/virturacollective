@@ -108,7 +108,9 @@
         <div id="navbar">
             <div id="navbar-left">
                 <a href="{{ route('index') }}">
-                    <h3 style="">{{ env('APP_NAME') }}</h3>
+{{--                    <h3 style="">{{ env('APP_NAME') }}</h3>--}}
+                     <img width="200" src="{{ asset('img/logo.png') }}"
+                              alt="{{ env('APP_NAME') }} Logo"/>
 {{--                    <img--}}
 {{--                        src="https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg"--}}
 {{--                        alt="BELAY Logo" id="logo"/>--}}

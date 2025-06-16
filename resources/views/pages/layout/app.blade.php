@@ -1262,9 +1262,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div>
-                        <h3>{{ env('APP_NAME') }}</h3>
-{{--                        <img width="200" src="wp-content/uploads/2022/04/Primary-Logo-Green-and-Positive.png"--}}
-{{--                              alt="{{ env('APP_NAME') }} Logo"/>--}}
+{{--                        <h3>{{ env('APP_NAME') }}</h3>--}}
+                        <img width="200" src="{{ asset('img/logo.png') }}"
+                              alt="{{ env('APP_NAME') }} Logo"/>
                     </div>
                     <p>The Right Hire. Right Now.</p>
                     <p>Virtual Assistants. Accounting Services. Marketing Assistants.</p>

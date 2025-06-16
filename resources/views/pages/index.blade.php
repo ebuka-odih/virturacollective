@@ -7,7 +7,7 @@
         <article id="post-800" class="post-800 page type-page status-publish has-post-thumbnail hentry">
 
             <header id="hero" class="hero hero-type__content hero-template__other"
-                    style="background-image: url('wp-content/uploads/2022/04/2021-homepage-hero.jpg');"
+                    style="background-image: url('img/banner.jpeg');"
             >
                 <div class="hero-overlay"></div>
                 <div class="container above-overlay" id="gf_3">
@@ -18,8 +18,8 @@
                                 Work from anywhere. Get matched with flexible, remote opportunities in administration, accounting, marketing. and more.
                             </h5>
                             <p></p>
-                            <a class="btn" id="hero-cta-btn" href="{{ route('get_started') }}">
-                                <span>
+                            <a style="margin-right: 20px" class="btn text-center" id="hero-cta-btn" href="{{ route('get_started') }}">
+                                <span >
                                     Start Your Application</span><i
                                     class="bi bi-chevron-down"></i></a></div>
                     </div>
