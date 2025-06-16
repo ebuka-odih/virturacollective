@@ -13,11 +13,14 @@
                 <div class="container above-overlay" id="gf_3">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1>The Right Hire.<br/>Right <u>Now</u>.</h1>
-                            <h5 class="secondary">AI-Empowered Virtual Assistant, Accounting, and Marketing Assistant
-                                staffing solutions.</h5>
+                            <h1>Launch Your Virtual Career<br/>Today.</h1>
+                            <h5 class="secondary">
+                                Work from anywhere. Get matched with flexible, remote opportunities in administration, accounting, marketing. and more.
+                            </h5>
                             <p></p>
-                            <a class="btn" id="hero-cta-btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span><i
+                            <a class="btn" id="hero-cta-btn" href="{{ route('get_started') }}">
+                                <span>
+                                    Start Your Application</span><i
                                     class="bi bi-chevron-down"></i></a></div>
                     </div>
                 </div>
@@ -173,8 +176,82 @@
     <section id="transform-workday-section-animated" class="transform-workday-section-animated"
              style="background: white;">
         <div class="container">
+            <!-- Container -->
+<div class="container py-5">
 
-            
+  <!-- Section Heading -->
+  <h2 class="text-center fw-bold mb-5">
+    Your Path to the Perfect Remote Job
+  </h2>
+
+  <!-- 4-Step Icons Row -->
+  <div class="row text-center g-4 mb-5">
+    <!-- Step 1 -->
+    <div class="col-12 col-md-3">
+      <div class="mb-3 fs-2 text-primary">
+        <i class="fa-regular fa-user"></i>
+      </div>
+      <h5 class="fw-semibold">Create a Profile</h5>
+      <p class="small text-muted">Tell us about your skills, goals, and experience.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="col-12 col-md-3">
+      <div class="mb-3 fs-2 text-primary">
+        <i class="fa-solid fa-right-left"></i>
+      </div>
+      <h5 class="fw-semibold">Get Matched</h5>
+      <p class="small text-muted">Our smart system connects you with jobs that suit your strengths.</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="col-12 col-md-3">
+      <div class="mb-3 fs-2 text-primary">
+        <i class="fa-solid fa-robot"></i>
+      </div>
+      <h5 class="fw-semibold">AI-Powered Matching</h5>
+      <p class="small text-muted">Skill-building resources and data-driven recommendations.</p>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="col-12 col-md-3">
+      <div class="mb-3 fs-2 text-primary">
+        <i class="fa-regular fa-clock"></i>
+      </div>
+      <h5 class="fw-semibold">Flexible Work Hours</h5>
+      <p class="small text-muted">Find roles that fit your ideal schedule and lifestyle.</p>
+    </div>
+  </div>
+
+  <!-- Two-Column CTA Row -->
+  <div class="row align-items-start gy-4">
+    <!-- Left: Why Join -->
+    <div class="col-12 col-md-6">
+      <h4 class="fw-bold mb-3">Why Join Virtura Collective?</h4>
+      <p>Post a job or request a staffing consultation to connect with pre-vetted professionals.</p>
+
+      <!-- Optional action button -->
+      <button class="btn btn-outline-primary mt-2">
+        Join the Collective
+      </button>
+    </div>
+
+    <!-- Right: Hire Talent -->
+    <div class="col-12 col-md-6">
+      <div class="p-4 border rounded-3 bg-light h-100">
+        <h4 class="fw-bold mb-3">Looking to Hire Virtual Talent?</h4>
+        <p class="mb-4">Post a job or request a staffing consultation to connect with pre-vetted professionals.</p>
+
+        <button class="btn btn-primary w-100">
+          Hire Through Virtura
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
         </div>
     </section>
 

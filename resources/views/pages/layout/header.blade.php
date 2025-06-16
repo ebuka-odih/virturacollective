@@ -167,7 +167,7 @@
                 </div>
 
 
-                <a href="work-with-us/index.html" class="header-link"> About {{ env('APP_NAME') }}</a>
+                <a href="{{ route('about') }}" class="header-link"> About {{ env('APP_NAME') }}</a>
                 <a href="work-with-us/index.html" class="header-link">Contact Us</a>
 
             </div>
