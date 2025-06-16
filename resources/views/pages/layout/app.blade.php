@@ -1279,9 +1279,7 @@
                 <div class="col-lg-3">
 {{--                    <p><a class="footer-menu-link" href="https://blog.belaysolutions.com/">More Resources</a></p>--}}
 {{--                    <p><a class="footer-menu-link" href="https://blog.belaysolutions.com/">Read Our Blog</a></p>--}}
-                    <p><a class="footer-menu-link" href="podcast/index.html">One Next Step Podcast</a></p>
-                    <p><a class="footer-menu-link" href="our-company/index.html">Our Company</a></p>
-                    <p><a class="footer-menu-link" href="work-with-us/index.html">Jobs</a></p>
+                    <p><a class="footer-menu-link" href="{{ route('about') }}">Our Company</a></p>
                 </div>
             </div>
         </div>

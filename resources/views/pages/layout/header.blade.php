@@ -101,7 +101,9 @@
                 }
             }
         </style>
-        <div id="top-banner" class="u-fade-type-up js-scroll-trigger">{{ env('APP_NAME') }} is Excited to Welcome Accountfully!
+        <div id="top-banner" class="u-fade-type-up js-scroll-trigger">
+            {{ env('APP_NAME') }} is Excited to Welcome Accountfully!
+            <span>Email: contact@virturacollective.com</span>
         </div>
         <div id="navbar">
             <div id="navbar-left">
@@ -168,7 +170,7 @@
 
 
                 <a href="{{ route('about') }}" class="header-link"> About {{ env('APP_NAME') }}</a>
-                <a href="work-with-us/index.html" class="header-link">Contact Us</a>
+                <a href="{{ route('contact') }}" class="header-link">Contact Us</a>
 
             </div>
             <div id="navbar-right">
@@ -271,20 +273,7 @@
                         </a>
                     </div>
                 </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="podcast/index.html" class="full-screen-menu-left-column-link">Podcast
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
-                <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
-                    <div class="full-screen-menu-left-column-menu-item">
-                        <a href="our-company/index.html" class="full-screen-menu-left-column-link">Our Company
-                            <div class="full-screen-menu-link-underline"></div>
-                        </a>
-                    </div>
-                </div>
+
             </div>
             <div id="full-screen-menu-right-column">
                 <div class="full-screen-menu-right-column-title">The Right Hire.<br/>Right Now.</div>
@@ -292,7 +281,7 @@
                 <div>
                     <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                         <div class="full-screen-menu-right-column-menu-item">
-                            <a href="https://blog.belaysolutions.com/tag/ebooks-guides"
+                            <a href="{{ route('about') }}"
                                class="full-screen-menu-right-column-link">About {{ env('APP_NAME') }}
                                 <div class="full-screen-menu-link-underline"></div>
                             </a>
@@ -300,7 +289,7 @@
                     </div>
                     <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
                         <div class="full-screen-menu-right-column-menu-item">
-                            <a href="work-with-us/index.html" class="full-screen-menu-right-column-link">Contact Us
+                            <a href="{{ route('contact') }}" class="full-screen-menu-right-column-link">Contact Us
                                 <div class="full-screen-menu-link-underline"></div>
                             </a>
                         </div>
