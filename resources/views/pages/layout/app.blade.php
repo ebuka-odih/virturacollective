@@ -15,7 +15,6 @@
     <title>{{ env('APP_NAME') }}: Virtual Assistants &amp; Accounting Services to Serve You</title>
     <meta name="description"
           content="Whether you need a Virtual Assistant, Accounting, or Marketing Assistant Services, we&#039;re ready to help you find the perfect match."/>
-    <link rel="canonical" href="index.html"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ env('APP_NAME') }}: Virtual Assistants &amp; Accounting Services to Serve You"/>
@@ -36,99 +35,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ env('APP_NAME') }} Solutions &raquo; Feed" href="feed/index.html"/>
     <link rel="alternate" type="application/rss+xml" title="{{ env('APP_NAME') }} Solutions &raquo; Comments Feed"
           href="comments/feed/index.html"/>
-    <script>
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/",
-            "svgExt": ".svg",
-            "source": {"concatemoji": "https:\/\/belaysolutions.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8"}
-        };
-        /*! This file is auto-generated */
-        !function (i, n) {
-            var o, s, e;
 
-            function c(e) {
-                try {
-                    var t = {supportTests: e, timestamp: (new Date).valueOf()};
-                    sessionStorage.setItem(o, JSON.stringify(t))
-                } catch (e) {
-                }
-            }
-
-            function p(e, t, n) {
-                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
-                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
-                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                return t.every(function (e, t) {
-                    return e === r[t]
-                })
-            }
-
-            function u(e, t, n) {
-                switch (t) {
-                    case"flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case"emoji":
-                        return !n(e, "\ud83d\udc26\u200d\ud83d\udd25", "\ud83d\udc26\u200b\ud83d\udd25")
-                }
-                return !1
-            }
-
-            function f(e, t, n) {
-                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
-                    a = r.getContext("2d", {willReadFrequently: !0}),
-                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
-                return e.forEach(function (e) {
-                    o[e] = t(a, e, n)
-                }), o
-            }
-
-            function t(e) {
-                var t = i.createElement("script");
-                t.src = e, t.defer = !0, i.head.appendChild(t)
-            }
-
-            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, e = new Promise(function (e) {
-                i.addEventListener("DOMContentLoaded", e, {once: !0})
-            }), new Promise(function (t) {
-                var n = function () {
-                    try {
-                        var e = JSON.parse(sessionStorage.getItem(o));
-                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
-                    } catch (e) {
-                    }
-                    return null
-                }();
-                if (!n) {
-                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
-                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
-                            r = new Blob([e], {type: "text/javascript"}),
-                            a = new Worker(URL.createObjectURL(r), {name: "wpTestEmojiSupports"});
-                        return void (a.onmessage = function (e) {
-                            c(n = e.data), a.terminate(), t(n)
-                        })
-                    } catch (e) {
-                    }
-                    c(n = f(s, u, p))
-                }
-                t(n)
-            }).then(function (e) {
-                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () {
-                    n.DOMReady = !0
-                }
-            }).then(function () {
-                return e
-            }).then(function () {
-                var e;
-                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
-            }))
-        }((window, document), window._wpemojiSettings);
-    </script>
     <style id='wp-emoji-styles-inline-css'>
 
         img.wp-smiley, img.emoji {
@@ -515,9 +422,7 @@
         }
     </style>
     <link rel='stylesheet' id='belay-style-css' href='{{ asset('wp-content/themes/s/style8a54.css?ver=1.0.0') }}' media='all'/>
-    <script id="jquery-core-js-extra">
-        var my_ajax_object = {"ajax_url": "https:\/\/belaysolutions.com\/wp-admin\/admin-ajax.php"};
-    </script>
+
     <script src="{{ asset('wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1') }}" id="jquery-core-js"></script>
     <script src="{{ asset('wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1') }}" id="jquery-migrate-js"></script>
     <script defer crossorigin="anonymous" src="https://kit.fontawesome.com/b8139b8932.js"
@@ -525,31 +430,8 @@
 
     <!-- Google tag (gtag.js) snippet added by Site Kit -->
 
-    <!-- Google Analytics snippet added by Site Kit -->
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-ENPK330K4W" id="google_gtagjs-js" async></script>
-    <script id="google_gtagjs-js-after">
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag("set", "linker", {"domains": ["belaysolutions.com"]});
-        gtag("js", new Date());
-        gtag("set", "developer_id.dZTNiMT", true);
-        gtag("config", "G-ENPK330K4W");
-    </script>
-
-    <!-- End Google tag (gtag.js) snippet added by Site Kit -->
-    <link rel="https://api.w.org/" href="wp-json/index.html"/>
-    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/800.json"/>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd"/>
     <meta name="generator" content="WordPress 6.8"/>
-    <link rel='shortlink' href='index.html'/>
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-          href="wp-json/oembed/1.0/embedb687.json?url=https%3A%2F%2Fbelaysolutions.com%2F"/>
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-          href="wp-json/oembed/1.0/embed49aa?url=https%3A%2F%2Fbelaysolutions.com%2F&amp;format=xml"/>
+
     <meta name="generator" content="Site Kit by Google 1.151.0"/>
     <script>
 
@@ -669,12 +551,7 @@
     </script>
 
     <script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
-    <script type="text/javascript"> ttd_dom_ready(function () {
-            if (typeof TTDUniversalPixelApi === 'function') {
-                var universalPixelApi = new TTDUniversalPixelApi();
-                universalPixelApi.init("a5fb0tf", ["blr5w5q"], "https://insight.adsrvr.org/track/up");
-            }
-        }); </script>
+
     <script>(function (u, n, i, v, e, r, s, a, l) {
             u[r] = {};
             u[r].uid = 'b806e792-f768-412f-9f49-922ff64d4d45';
@@ -722,26 +599,8 @@
 
         }
     </script>
-    <!-- Google Tag Manager snippet added by Site Kit -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KBSVRG');
 
-    </script>
 
-    <!-- End Google Tag Manager snippet added by Site Kit -->
-    <link rel="icon" href="wp-content/uploads/2022/04/cropped-cropped-go-belay-fav.png-32x32.webp" sizes="32x32"/>
-    <link rel="icon" href="wp-content/uploads/2022/04/cropped-cropped-go-belay-fav.png-192x192.webp" sizes="192x192"/>
-    <link rel="apple-touch-icon" href="wp-content/uploads/2022/04/cropped-cropped-go-belay-fav.png-180x180.webp"/>
-    <meta name="msapplication-TileImage"
-          content="https://belaysolutions.com/wp-content/uploads/2022/04/cropped-cropped-go-belay-fav.png-270x270.webp"/>
     <style type="text/css">
         .four-up-wide .box {
             padding: 5% 45px 7.5% 45px;

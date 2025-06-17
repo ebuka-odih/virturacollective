@@ -231,9 +231,9 @@
       <p>Post a job or request a staffing consultation to connect with pre-vetted professionals.</p>
 
       <!-- Optional action button -->
-      <button class="btn btn-outline-primary mt-2">
+      <a href="{{ route('get_started') }}" class="btn btn-outline-primary mt-2">
         Join the Collective
-      </button>
+      </a>
     </div>
 
     <!-- Right: Hire Talent -->
@@ -242,9 +242,9 @@
         <h4 class="fw-bold mb-3">Looking to Hire Virtual Talent?</h4>
         <p class="mb-4">Post a job or request a staffing consultation to connect with pre-vetted professionals.</p>
 
-        <button class="btn btn-primary w-100">
+        <a href="{{ route('get_started') }}" class="btn btn-primary w-100">
           Hire Through Virtura
-        </button>
+        </a>
       </div>
     </div>
   </div>
