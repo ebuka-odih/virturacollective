@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en-US">
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +10,6 @@
             contain-intrinsic-size: 3000px 1500px
         }</style>
 
-    <!-- This site is optimized with the Yoast SEO plugin v25.0 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>{{ env('APP_NAME') }}: Virtual Assistants &amp; Accounting Services to Serve You</title>
     <meta name="description"
           content="Whether you need a Virtual Assistant, Accounting, or Marketing Assistant Services, we&#039;re ready to help you find the perfect match."/>
@@ -21,14 +19,13 @@
     <meta property="og:description"
           content="Whether you need a Virtual Assistant, Accounting, or Marketing Assistant Services, we&#039;re ready to help you find the perfect match."/>
     <meta property="og:site_name" content="{{ env('APP_NAME') }} Solutions"/>
-    <meta property="article:modified_time" content="2025-04-25T11:07:37+00:00"/>
-{{--    <meta property="og:image" content="https://belaysolutions.com/wp-content/uploads/2022/04/belay-og.png"/>--}}
-{{--    <meta property="og:image:width" content="1000"/>--}}
-{{--    <meta property="og:image:height" content="1000"/>--}}
-{{--    <meta property="og:image:type" content="image/png"/>--}}
-{{--    <meta name="twitter:card" content="summary_large_image"/>--}}
-    <!-- / Yoast SEO plugin. -->
 
+    <meta property="og:image" content="{{ asset('img/logo.png') }}"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="1200"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="{{ asset('img/logo.png') }}"/>
 
     <link rel='dns-prefetch' href='http://js.hs-scripts.com/'/>
     <link rel='dns-prefetch' href='http://kit.fontawesome.com/'/>

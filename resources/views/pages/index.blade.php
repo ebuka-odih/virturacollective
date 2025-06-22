@@ -262,7 +262,7 @@
 
                 <div class="col-sm-12 col-md-6 col-lg-3 box"
                      style="background-image: url('https://belaysolutions.com/wp-content/uploads/2022/04/virtual-assist.jpeg);">
-                    <a href="services/assistants/index.html">
+                    <a href="{{ route('assistants') }}">
                         <div class="box-inner d-flex flex-column justify-content-flex-start">
                             <i class="bi bi-headset"></i>
                             <h2>Virtual Assistants</h2>
@@ -276,7 +276,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 box"
                      style="background-image: url('https://belaysolutions.com/wp-content/uploads/2022/04/bookkeeping-services.jpg);">
-                    <a href="services/accounting/index.html">
+                    <a href="{{ route('accounting') }}">
                         <div class="box-inner d-flex flex-column justify-content-flex-start">
                             <i class="bi bi-cash-stack"></i>
                             <h2>Accounting Professionals</h2>
@@ -290,7 +290,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 box"
                      style="background-image: url('https://belaysolutions.com/wp-content/uploads/2022/04/social-media-manager-services.jpg);">
-                    <a href="services/marketing/index.html">
+                    <a href="{{ route('marketing') }}">
                         <div class="box-inner d-flex flex-column justify-content-flex-start">
                             <i class="bi bi-share"></i>
                             <h2>Marketing Assistants</h2>

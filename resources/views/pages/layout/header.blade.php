@@ -1,3 +1,12 @@
+<style>
+    .hamburger-icon-container {
+    /* cursor: pointer; */
+    display: inline-block;
+    margin-right: 25px;
+    /* max-height: 35px; */
+    /* padding-top: 5px; */
+}
+</style>
  <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
 
 <header class="header">
@@ -109,7 +118,7 @@
             <div id="navbar-left">
                 <a href="{{ route('index') }}">
 {{--                    <h3 style="">{{ env('APP_NAME') }}</h3>--}}
-                     <img width="120" src="{{ asset('img/logo.png') }}"
+                     <img style="margin-left: -10px" width="100" src="{{ asset('img/logo.png') }}"
                               alt="{{ env('APP_NAME') }} Logo"/>
 {{--                    <img--}}
 {{--                        src="https://4611466.fs1.hubspotusercontent-na1.net/hubfs/4611466/Belay Brand/BELAY Primary Logo White.svg"--}}
@@ -225,7 +234,7 @@
 
                 </script>
 
-                <div style="display: none" class="hamburger-icon-container" onclick="hamburgerMenu(this)">
+                <div class="hamburger-icon-container" onclick="hamburgerMenu(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -278,7 +287,7 @@
 
             </div>
             <div id="full-screen-menu-right-column">
-                <div class="full-screen-menu-right-column-title">The Right Hire.<br/>Right Now.</div>
+                <!-- <div class="full-screen-menu-right-column-title">The Right Hire.<br/>Right Now.</div> -->
                 <div class="full-screen-menu-right-column-subtitle">Everything you need to transform your work.</div>
                 <div>
                     <div onmouseover="fullScreenMenuLinkMouseOver(this)" onmouseout="fullScreenMenuLinkMouseOut(this)">
