@@ -34,7 +34,7 @@
                                 <p class="text-center">Our Bookkeepers are experts at delivering transparent and
                                     accurate GAAP-compliant financial information, managing accounts payable and
                                     receivable, and generating precise monthly and annual reports.<br><br><a
-                                        href="../bookkeeping/index.html"
+                                        href="{{ route('get_started') }}"
                                         style="color: #12d678;font-weight: 900;letter-spacing: 0.2em;text-decoration: underline">LEARN
                                         MORE</a></p>
                             </div>
@@ -44,7 +44,7 @@
                                 <p class="text-center">Our fractional Controllers serve as your integrated lead
                                     accountant, create your financial strategy, implement internal accounting
                                     procedures, and help you prepare accurate and timely reporting.<br><br><a
-                                        href="../controller/index.html"
+                                        href="{{ route('get_started') }}"
                                         style="color: #12d678;font-weight: 900;letter-spacing: 0.2em;text-decoration: underline">LEARN
                                         MORE</a></p>
                             </div>
@@ -54,7 +54,7 @@
                                 <p class="text-center">By partnering with you, your partners, or executives, our CFOs
                                     develop and drive the overall financial strategy of your organization by developing
                                     strategic plans with a deep understanding of underlying economics.<br><br><a
-                                        href="../cfo-services/index.html"
+                                        href="{{ route('get_started') }}"
                                         style="color: #12d678;font-weight: 900;letter-spacing: 0.2em;text-decoration: underline">LEARN
                                         MORE</a></p>
                             </div>
@@ -234,7 +234,7 @@
                         <h2 class="text-center"><span
                                 style="font-family: roboto condensed,sans-serif; text-transform: uppercase;">Maybe you need all the help.<br><em>Maybe you only need a little.</em></span>
                         </h2>
-                        <p class="text-center tiles-title-sub">With {{ env('APP_NAME') }}’s customizable outsourced financial team, we
+                        <p class="text-center tiles-title-sub">With {{ env('APP_NAME') }}'s customizable outsourced financial team, we
                             have just the right solution for you and your growing organization. </p>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12">
@@ -264,7 +264,7 @@
                                         organization efficiently, enhance your ability to analyze operations, and make
                                         informed decisions for the growth of your organization.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../bookkeeping/index.html">Learn More About {{ env('APP_NAME') }}'s<br>Bookkeeping
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More About {{ env('APP_NAME') }}'s<br>Bookkeeping
                                         Services</a>
                                 </div>
                             </div>
@@ -285,7 +285,7 @@
                                     <span class="tile-icon caption-icon"><i class="fa-classic fa-thin fa-calculator"
                                                                             aria-hidden="true"></i></span><br>
                                     <p class="caption-body"></p>
-                                    <p style="text-align: left; width: 80%; margin: 0 auto;">{{ env('APP_NAME') }}’s outsourced
+                                    <p style="text-align: left; width: 80%; margin: 0 auto;">{{ env('APP_NAME') }}'s outsourced
                                         accounting services go beyond basic bookkeeping — think of us as your complete
                                         financial team. As your virtual accounting department, we handle everything from
                                         bank reconciliations and invoicing to payroll processing, sales tax filings, and
@@ -297,7 +297,7 @@
                                         finances in order so you can focus on growing your business. Let us take the
                                         stress out of accounting while you lead with confidence.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../outsourced-accounting-solutions/index.html">Learn
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn
                                         More About {{ env('APP_NAME') }}'s<br>Outsourced Accounting Services</a>
                                 </div>
                             </div>
@@ -329,7 +329,7 @@
                                         an existing one, our experts handle implementation, consulting, technical
                                         support, and data maintenance — so you can focus on growth.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../inventory-consulting/index.html">Learn More
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More
                                         About {{ env('APP_NAME') }}'s<br>Inventory Consulting Services</a>
                                 </div>
                             </div>
@@ -359,7 +359,7 @@
                                         incoming and outgoing payments with precision to ensure accurate account
                                         management.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../accounting-clerk/index.html">Learn More About
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More About
                                         {{ env('APP_NAME') }}'s<br>Accounting Clerk Services</a>
                                 </div>
                             </div>
@@ -383,7 +383,7 @@
                                     <p class="caption-body"></p>
                                     <p style="text-align: left; width: 80%; margin: 0 auto;">Empower your business with
                                         a proactive {{ env('APP_NAME') }} Accounting Professional who skillfully manages every facet of
-                                        payroll so you don’t have to.</p>
+                                        payroll so you don't have to.</p>
                                     <p>&nbsp;</p>
                                     <p style="text-align: left; width: 80%; margin: 0 auto;">From efficiently processing
                                         payroll and facilitating direct deposits to conducting precise payroll
@@ -392,7 +392,7 @@
                                         filing and payments with precision, going above and beyond for your financial
                                         peace of mind.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../../payroll/index.html">Learn More About
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More About
                                         {{ env('APP_NAME') }}'s<br>Fully Managed Payroll Services</a>
                                 </div>
                             </div>
@@ -424,7 +424,7 @@
                                         advisory services, manage quarterly, sales, franchise, and personal property tax
                                         payments, and handle 1099 filings — so you can focus on what matters most.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../tax-services/index.html">Learn More About
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More About
                                         {{ env('APP_NAME') }}'s<br>Tax Services</a>
                                 </div>
                             </div>
@@ -456,7 +456,7 @@
                                         capital management, and cash-flow analyses, the preparation of detailed budgets
                                         and forecasts, and the analyses of their performance and benchmarking.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../controller/index.html">Learn More About
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More About
                                         {{ env('APP_NAME') }}'s<br>Controller Services</a>
                                 </div>
                             </div>
@@ -489,10 +489,10 @@
                                         conducting rigorous financial reviews, modeling, planning and analyses —
                                         supported by AI-powered forecasting tools — orchestrating strategic profit
                                         planning and execution, and actively serving as a liaison with seasoned tax
-                                        experts, lenders, and investors to optimize your organization’s financial
+                                        experts, lenders, and investors to optimize your organization's financial
                                         landscape.</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../cfo-services/index.html">Learn More About
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More About
                                         {{ env('APP_NAME') }}'s<br>CFO Services</a>
                                 </div>
                             </div>
@@ -521,7 +521,7 @@
                                         strategy to help you lead your business with confidence.</p>
                                     <p>&nbsp;</p>
                                     <p></p>
-                                    <a class="btn caption-btn" href="../enterprise-accounting/index.html">Learn More
+                                    <a class="btn caption-btn" href="{{ route('get_started') }}">Learn More
                                         About {{ env('APP_NAME') }}'s<br>Enterprise Solutions</a>
                                 </div>
                             </div>
@@ -537,7 +537,7 @@
                     <div class="col-12">
                         <h2><span style="font-family: roboto condensed,sans-serif; text-transform: uppercase;">Maybe you need all the help.<br><em>Maybe you only need a little.</em></span>
                         </h2>
-                        <p>With {{ env('APP_NAME') }}’s customizable outsourced financial team, we have just the right solution for you
+                        <p>With {{ env('APP_NAME') }}'s customizable outsourced financial team, we have just the right solution for you
                             and your growing organization. </p>
                     </div>
                 </div>
@@ -570,7 +570,7 @@
                                 This empowers you to steer your organization efficiently, enhance your ability to
                                 analyze operations, and make informed decisions for the growth of your organization.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../bookkeeping/index.html">Learn More About {{ env('APP_NAME') }}'s<br>Bookkeeping
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About {{ env('APP_NAME') }}'s<br>Bookkeeping
                                 Services</a>
                         </div>
                         <div class="content service-content active" id="content-2" style="width: 776.656px;">
@@ -579,7 +579,7 @@
                                                                     aria-hidden="true"></i></span>
                             <!-- Font awesome icon -->
                             <p></p>
-                            <p style="text-align: left; width: 80%; margin: 0 auto;">{{ env('APP_NAME') }}’s outsourced accounting
+                            <p style="text-align: left; width: 80%; margin: 0 auto;">{{ env('APP_NAME') }}'s outsourced accounting
                                 services go beyond basic bookkeeping — think of us as your complete financial team. As
                                 your virtual accounting department, we handle everything from bank reconciliations and
                                 invoicing to payroll processing, sales tax filings, and financial reporting, enhanced by
@@ -590,7 +590,7 @@
                                 order so you can focus on growing your business. Let us take the stress out of
                                 accounting while you lead with confidence.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../outsourced-accounting-solutions/index.html">Learn More
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More
                                 About {{ env('APP_NAME') }}'s<br>Outsourced Accounting Services</a>
                         </div>
                         <div class="content service-content active" id="content-3" style="width: 776.656px;">
@@ -610,7 +610,7 @@
                                 one, our experts handle implementation, consulting, technical support, and data
                                 maintenance — so you can focus on growth.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../inventory-consulting/index.html">Learn More About
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About
                                 {{ env('APP_NAME') }}'s<br>Inventory Consulting Services</a>
                         </div>
                         <div class="content service-content active" id="content-4" style="width: 776.656px;">
@@ -626,7 +626,7 @@
                                 organize documents and expertly apply incoming and outgoing payments with precision to
                                 ensure accurate account management.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../accounting-clerk/index.html">Learn More About
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About
                                 {{ env('APP_NAME') }}'s<br>Accounting Clerk Services</a>
                         </div>
                         <div class="content service-content active" id="content-5" style="width: 776.656px;">
@@ -637,7 +637,7 @@
                             <p></p>
                             <p style="text-align: left; width: 80%; margin: 0 auto;">Empower your business with a
                                 proactive {{ env('APP_NAME') }} Accounting Professional who skillfully manages every facet of payroll so
-                                you don’t have to.</p>
+                                you don't have to.</p>
                             <p>&nbsp;</p>
                             <p style="text-align: left; width: 80%; margin: 0 auto;">From efficiently processing payroll
                                 and facilitating direct deposits to conducting precise payroll calculations and
@@ -645,7 +645,7 @@
                                 by AI-enhanced tools—handle quarterly and year-end tax filing and payments with
                                 precision, going above and beyond for your financial peace of mind.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../../payroll/index.html">Learn More About {{ env('APP_NAME') }}'s<br>Fully
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About {{ env('APP_NAME') }}'s<br>Fully
                                 Managed Payroll Services</a>
                         </div>
                         <div class="content service-content active" id="content-6" style="width: 776.656px;">
@@ -664,7 +664,7 @@
                                 services, manage quarterly, sales, franchise, and personal property tax payments, and
                                 handle 1099 filings — so you can focus on what matters most.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../tax-services/index.html">Learn More About {{ env('APP_NAME') }}'s<br>Tax
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About {{ env('APP_NAME') }}'s<br>Tax
                                 Services</a>
                         </div>
                         <div class="content service-content active" id="content-7"
@@ -684,7 +684,7 @@
                                 cash-flow analyses, the preparation of detailed budgets and forecasts, and the analyses
                                 of their performance and benchmarking.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../controller/index.html">Learn More About {{ env('APP_NAME') }}'s<br>Controller
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About {{ env('APP_NAME') }}'s<br>Controller
                                 Services</a>
                         </div>
                         <div class="content service-content active" id="content-8" style="width: 776.656px;">
@@ -702,10 +702,10 @@
                                 insight to provide a comprehensive service that includes conducting rigorous financial
                                 reviews, modeling, planning and analyses — supported by AI-powered forecasting tools —
                                 orchestrating strategic profit planning and execution, and actively serving as a liaison
-                                with seasoned tax experts, lenders, and investors to optimize your organization’s
+                                with seasoned tax experts, lenders, and investors to optimize your organization's
                                 financial landscape.</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../cfo-services/index.html">Learn More About {{ env('APP_NAME') }}'s<br>CFO
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About {{ env('APP_NAME') }}'s<br>CFO
                                 Services</a>
                         </div>
                         <div class="content service-content active" id="content-9" style="width: 776.656px;">
@@ -721,7 +721,7 @@
                                 build a unified financial strategy to help you lead your business with confidence.</p>
                             <p>&nbsp;</p>
                             <p></p> <!-- Paragraph -->
-                            <a class="btn content-btn" href="../enterprise-accounting/index.html">Learn More About
+                            <a class="btn content-btn" href="{{ route('get_started') }}">Learn More About
                                 {{ env('APP_NAME') }}'s<br>Enterprise Solutions</a>
                         </div>
                     </div>
@@ -894,22 +894,22 @@
                 <div class="row d-flex flex-row justify-content-center">
                     <div class="col-sm-6 text-left">
                         <h2 class="text-left">AI-Amplified Insights.<br>Human-Led Precision.</h2>
-                        <p> Numbers don’t lie — but they don’t always explain themselves either.<br><br>That’s where
-                            {{ env('APP_NAME') }}’s Accounting Services stand apart.<br><br>We pair vetted, U.S.-based Accounting
+                        <p> Numbers don't lie — but they don't always explain themselves either.<br><br>That's where
+                            {{ env('APP_NAME') }}'s Accounting Services stand apart.<br><br>We pair vetted, U.S.-based Accounting
                             Professionals with AI systems that do more than automate — they illuminate. Our
                             professionals use proprietary, AI-enabled workflows to streamline reconciliations,
                             accelerate monthly closes, and surface real-time insights that support smarter business
                             decisions.<br><br>From organizing financial data and generating tailored reports to flagging
-                            anomalies before they become issues, {{ env('APP_NAME') }}’s AI frameworks handle the repetition — so your
+                            anomalies before they become issues, {{ env('APP_NAME') }}'s AI frameworks handle the repetition — so your
                             accountant can focus on interpretation and strategic guidance.<br><br>And because our AI is
-                            trained on {{ env('APP_NAME') }}’s internal processes and best practices, it enhances — not replaces — the
+                            trained on {{ env('APP_NAME') }}'s internal processes and best practices, it enhances — not replaces — the
                             judgment, discernment, and expertise of our team.<br><br>This is amplified financial support
                             that scales with you.</p>
                     </div>
                     <div class="col-sm-6 text-right d-flex flex-column justify-content-center">
                         <div class="outter-button d-flex flex-row justify-content-end">
                             <a class="btn u-fade-type-down js-scroll-trigger"
-                               href="../../artificial-intelligence/index.html">LEARN MORE<i
+                               href="{{ route('get_started') }}">LEARN MORE<i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -992,7 +992,7 @@
                         <div class="info-block-text">
                             <p style="text-align: center;">Everything you need for the peace of mind you deserve.</p>
                             <p style="text-align: center;">At {{ env('APP_NAME') }}, our mission is to equip you with the confidence to
-                                climb higher and in order to do that, it’s important to note a few things that help us
+                                climb higher and in order to do that, it's important to note a few things that help us
                                 do just that.</p>
                             <p>&nbsp;</p>
                             <div class="info-block-bullets">
@@ -1121,15 +1121,15 @@
                                     style="width: 1180px; margin-right: 0px; float: left; display: block;">
                                     <img src="../../wp-content/uploads/2023/10/start-quotation.svg"
                                          class="testimonial-icon fa-quote-left" draggable="false">
-                                    <p class="text-left testimonial-caption">I’m easily getting 10-plus hours a week
+                                    <p class="text-left testimonial-caption">I'm easily getting 10-plus hours a week
                                         back to focus on other things that help move the business forward.<br>
                                         <br>
-                                        We started with bookkeeping because when you start a small business, you can’t
+                                        We started with bookkeeping because when you start a small business, you can't
                                         afford to hire a bookkeeper internally.<br>
                                         <br>
                                         We got paired with an incredible rock star.<br>
                                         <br>
-                                        She’s never seen our business, she’s never been here, but she’s been phenomenal
+                                        She's never seen our business, she's never been here, but she's been phenomenal
                                         and super instrumental in our business for payroll and bookkeeping. <br>
                                         <br>
                                         We love her.</p>
@@ -1148,12 +1148,12 @@
                                     style="width: 1180px; margin-right: 0px; float: left; display: block;">
                                     <img src="../../wp-content/uploads/2023/10/start-quotation.svg"
                                          class="testimonial-icon fa-quote-left" draggable="false">
-                                    <p class="text-left testimonial-caption">I’ve always struggled with trying to find
+                                    <p class="text-left testimonial-caption">I've always struggled with trying to find
                                         an accountant to speak my language and to explain things to me in a common
                                         language.<br>
                                         <br>
-                                        For me, as a creative and as a business owner with a growing company, it’s so
-                                        beneficial. It’s been just a piece of cake from the beginning.</p>
+                                        For me, as a creative and as a business owner with a growing company, it's so
+                                        beneficial. It's been just a piece of cake from the beginning.</p>
                                     <div class="row testimonial-attribution">
                                         <img src="../../wp-content/uploads/2022/09/Tamara-Gollob-opt-square.jpg"
                                              class="testimonial-photo" draggable="false">
@@ -1200,9 +1200,9 @@
                                         <br>
                                         [Our {{ env('APP_NAME') }} Accounting Professional] makes it easy to work with her. <br>
                                         <br>
-                                        She’s a good fit for the church.<br>
+                                        She's a good fit for the church.<br>
                                         <br>
-                                        She’s very timely and she’s very responsive.<br>
+                                        She's very timely and she's very responsive.<br>
                                         <br>
                                         One of the biggest accomplishments of hers for me is that she gets me our
                                         financials on time.</p>
@@ -1222,15 +1222,15 @@
                                     style="width: 1180px; margin-right: 0px; float: left; display: block;">
                                     <img src="../../wp-content/uploads/2023/10/start-quotation.svg"
                                          class="testimonial-icon fa-quote-left" draggable="false">
-                                    <p class="text-left testimonial-caption">I’m easily getting 10-plus hours a week
+                                    <p class="text-left testimonial-caption">I'm easily getting 10-plus hours a week
                                         back to focus on other things that help move the business forward.<br>
                                         <br>
-                                        We started with bookkeeping because when you start a small business, you can’t
+                                        We started with bookkeeping because when you start a small business, you can't
                                         afford to hire a bookkeeper internally.<br>
                                         <br>
                                         We got paired with an incredible rock star.<br>
                                         <br>
-                                        She’s never seen our business, she’s never been here, but she’s been phenomenal
+                                        She's never seen our business, she's never been here, but she's been phenomenal
                                         and super instrumental in our business for payroll and bookkeeping. <br>
                                         <br>
                                         We love her.</p>
@@ -1249,12 +1249,12 @@
                                     style="width: 1180px; margin-right: 0px; float: left; display: block;">
                                     <img src="../../wp-content/uploads/2023/10/start-quotation.svg"
                                          class="testimonial-icon fa-quote-left" draggable="false">
-                                    <p class="text-left testimonial-caption">I’ve always struggled with trying to find
+                                    <p class="text-left testimonial-caption">I've always struggled with trying to find
                                         an accountant to speak my language and to explain things to me in a common
                                         language.<br>
                                         <br>
-                                        For me, as a creative and as a business owner with a growing company, it’s so
-                                        beneficial. It’s been just a piece of cake from the beginning.</p>
+                                        For me, as a creative and as a business owner with a growing company, it's so
+                                        beneficial. It's been just a piece of cake from the beginning.</p>
                                     <div class="row testimonial-attribution">
                                         <img src="../../wp-content/uploads/2022/09/Tamara-Gollob-opt-square.jpg"
                                              class="testimonial-photo" draggable="false">
@@ -1382,8 +1382,8 @@
                             </svg>
                             <h3>Step 1. Sales Call</h3>
                             <p>Meet with your Solutions Consultant to identify your exact needs and pain points and
-                                determine the right hire for you. If {{ env('APP_NAME') }} is a good fit, we’ll send you an agreement to
-                                sign, and you’ll be paired with a Client Success Consultant.</p>
+                                determine the right hire for you. If {{ env('APP_NAME') }} is a good fit, we'll send you an agreement to
+                                sign, and you'll be paired with a Client Success Consultant.</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 boxed-column d-flex flex-column justify-content-flex-start">
@@ -1594,7 +1594,7 @@
                             </svg>
                             <h3>Step 3. Placement Process</h3>
                             <p>Now for our Secret Sauce: Your Client Success Consultant will vet and interview top
-                                candidates from our bench of nearly 2,000 U.S.-based Professionals. They’ll select the
+                                candidates from our bench of nearly 2,000 U.S.-based Professionals. They'll select the
                                 best match for you—in an average of just <em><strong>one week.</strong></em></p>
                         </div>
                     </div>
@@ -1703,34 +1703,7 @@
         </section>
 
 
-        <section id="Book Release Boxed Section Title" class="book-release-boxed">
-            <div class="container">
-                <div class="row">
-                    <div
-                        class="col-sm-12 col-md-12 col-lg-6 left-column d-flex justify-content-center u-fade-type-static js-scroll-trigger">
-                        <h5 class="text-left">&nbsp;</h5>
-                        <h2 class="text-left">Top 10 Things You Can Delegate to a Bookkeeper Today</h2>
-                        <h3 class="text-left">&nbsp;</h3>
-                        <p class="text-left">Here are some of the top tasks you can delegate to a bookkeeper so you can
-                            have financial peace of mind and spend time focusing on what only you can do.</p>
-                        <a class="btn"
-                           href="https://resources.belaysolutions.com/top-10-things-you-can-delegate-to-a-bookkeeper-today"
-                           target="_blank"><span>DOWNLOAD</span></a>
-                    </div>
-                    <div
-                        class="col-sm-12 col-md-12 col-lg-6 right-column d-flex justify-content-center u-fade-type-right delay-3 js-scroll-trigger">
-                        <p class="text-center d-flex justify-content-center">
-                            <picture>
-                                <source type="image/webp"
-                                        srcset="https://belaysolutions.com/wp-content/uploads/2023/09/Top-10-BK-Icon.png.webp">
-                                <img src="../../wp-content/uploads/2023/09/Top-10-BK-Icon.png"
-                                     alt="Top 10 Things You Can Delegate to a Bookkeeper">
-                            </picture>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
 
         <div class="embed-full-screen">
@@ -1822,14 +1795,14 @@
                                         <button class="btn btn-link text-left" data-toggle="collapse"
                                                 data-target="#collapse-5312" aria-expanded="false"
                                                 aria-controls="collapse-5312">
-                                            <span>I’m new to the remote concept and have no idea how this will work for me. Is there help?</span>
+                                            <span>I'm new to the remote concept and have no idea how this will work for me. Is there help?</span>
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapse-5312" class="collapse" aria-labelledby="heading-5312"
                                      data-parent="#faq-accordion">
                                     <div class="card-body">
-                                        <p>Of course! You’ll be assigned a Client Success Consultant who will walk
+                                        <p>Of course! You'll be assigned a Client Success Consultant who will walk
                                             through onboarding with you and who is there as a coach and resource for
                                             your entire time here at {{ env('APP_NAME') }}.</p>
                                     </div>
@@ -1930,7 +1903,7 @@
                                      data-parent="#faq-accordion">
                                     <div class="card-body">
                                         <p>Handing over the decision on who will work with you can be tough. But we know
-                                            you donʼt have time to devote to screening and setting up interviews. We
+                                            you don't have time to devote to screening and setting up interviews. We
                                             have a proven system to intentionally match you with someone equipped to
                                             handle everything you need accomplished.</p>
                                     </div>
@@ -1962,7 +1935,7 @@
                                         <button class="btn btn-link text-left" data-toggle="collapse"
                                                 data-target="#collapse-5319" aria-expanded="false"
                                                 aria-controls="collapse-5319">
-                                            <span>What’s the difference between an Accounting Professional and an accountant?</span>
+                                            <span>What's the difference between an Accounting Professional and an accountant?</span>
                                         </button>
                                     </h5>
                                 </div>
@@ -2022,7 +1995,7 @@
                                         <button class="btn btn-link text-left" data-toggle="collapse"
                                                 data-target="#collapse-53112" aria-expanded="false"
                                                 aria-controls="collapse-53112">
-                                            <span>Is your question not listed here? We’re happy to answer them for you!</span>
+                                            <span>Is your question not listed here? We're happy to answer them for you!</span>
                                         </button>
                                     </h5>
                                 </div>

@@ -815,12 +815,7 @@
                             your audience, and your voice.<br><br>More output. Less oversight.<br><br>Marketing support
                             that moves as fast as you do.</p>
                     </div>
-                    <div class="col-sm-6 text-right d-flex flex-column justify-content-center">
-                        <div class="outter-button d-flex flex-row justify-content-end">
-                            <a class="btn u-fade-type-down js-scroll-trigger is-active" href="#">LEARN MORE<i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -868,39 +863,7 @@
         </section>
 
 
-        <section id="25-marketing-tasks" class="book-release-boxed">
-            <div class="container">
-                <div class="row">
-                    <div
-                        class="col-sm-12 col-md-12 col-lg-6 left-column d-flex justify-content-center u-fade-type-static js-scroll-trigger">
-                        <h5 class="text-left">Introducing</h5>
-                        <h2 class="text-left"></h2>
-                        <h2>25 Tasks You Can Delegate to a Marketing Assistant</h2>
-                        <h3 class="text-left">&nbsp;</h3>
-                        <p class="text-left">Delegation is one of the most effective tools in a leader’s tool kit.
-                            Leveraging professional Marketing Assistant services empowers your team and helps you grow
-                            your business.Here are 25 marketing tasks you can start delegating immediately with the help
-                            of a Marketing Assistant.</p>
-                        <a class="btn"
-                           href="https://resources.belaysolutions.com/belay-25-marketing-tasks-you-can-delegate"
-                           target="_blank"><span>Download Now</span></a>
-                    </div>
-                    <div
-                        class="col-sm-12 col-md-12 col-lg-6 right-column d-flex justify-content-center u-fade-type-right delay-3 js-scroll-trigger">
-                        <p class="text-center d-flex justify-content-center">
-                            <picture>
-                                <source type="image/webp"
-                                        srcset="../../wp-content/uploads/2024/08/25-Marketing-Tasks-You-Can-Delegate_THUMBNAIL.png.webp">
-                                <img
-                                    src="../../wp-content/uploads/2024/08/25-Marketing-Tasks-You-Can-Delegate_THUMBNAIL.png"
-                                    alt="{{ env('APP_NAME') }} Resource | 25 Marketing Tasks You Can Delegate">
-                            </picture>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+       
 
         <section id="howcanhelp" class="talk-to-sales-steps icon-grid-left-header" style="background-color:#F4F4F4;">
             <div class="container">

@@ -20,7 +20,7 @@
                                 <h5 class="secondary">Accomplish More. Juggle Less.</h5>
                                 <p></p>
                                 <a class="btn" id="hero-cta-btn"
-                                   href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a></div>
+                                   href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a></div>
                         </div>
                         <div class="row hero-columns-below">
                             <div class="col-sm-12 col-md-4 col-lg-4 hero-column">
@@ -70,7 +70,7 @@
                         <i class="fa-thin fa-clock"></i>
                         <h3>Lack of Time</h3>
                         <p class="u-fade-type-static js-scroll-trigger is-active">Are you stretched so thin that you
-                            don’t have time to hire the help you need—let alone take a vacation?</p></div>
+                            don't have time to hire the help you need—let alone take a vacation?</p></div>
                     <div class="col-lg-4">
                         <i class="fa-thin fa-message-xmark"></i>
                         <h3>Unanswered Calls &amp; Emails</h3>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="row call-to-action-row u-fade-type-down js-scroll-trigger is-active">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
+                        <a class="btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                 </div>
             </div>
@@ -855,20 +855,20 @@
                 <div class="row d-flex flex-row justify-content-center">
                     <div class="col-sm-6 text-left">
                         <h2 class="text-left">AI-Amplified Efficiency.<br>Human-Led Excellence.</h2>
-                        <p>{{ env('APP_NAME') }} Executive Assistants don’t just check tasks off a list — they think like leaders, act
-                            with autonomy, and move at the speed of your priorities.<br><br>And now, they’re equipped to
-                            move even faster.<br><br>Our EAs combine C-suite experience with {{ env('APP_NAME') }}’s proprietary AI
+                        <p>{{ env('APP_NAME') }} Executive Assistants don't just check tasks off a list — they think like leaders, act
+                            with autonomy, and move at the speed of your priorities.<br><br>And now, they're equipped to
+                            move even faster.<br><br>Our EAs combine C-suite experience with {{ env('APP_NAME') }}'s proprietary AI
                             tools to anticipate needs, streamline execution, and surface insights that drive better
                             decisions.<br><br>From intelligent inbox triage to proactive prep for meetings and projects,
                             every EA is empowered to use AI not for shortcuts — but for strategy. That means less
-                            micromanagement, more trust, and more time back for what only you can do.<br><br>This isn’t
-                            traditional administrative support. It’s executive partnership — amplified through AI, led
+                            micromanagement, more trust, and more time back for what only you can do.<br><br>This isn't
+                            traditional administrative support. It's executive partnership — amplified through AI, led
                             by a human you can trust.</p>
                     </div>
                     <div class="col-sm-6 text-right d-flex flex-column justify-content-center">
                         <div class="outter-button d-flex flex-row justify-content-end">
                             <a class="btn u-fade-type-down js-scroll-trigger"
-                               href="../../artificial-intelligence/index.html">LEARN MORE<i
+                               href="{{ route('get_started') }}">LEARN MORE<i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -889,25 +889,25 @@
                     <div class="col-lg-6">
                         <p></p>
                         <p>As a busy leader, there are a lot of things on your plate.</p>
-                        <p>Whether it’s managing email, staying on top of project updates, or keeping up with an
+                        <p>Whether it's managing email, staying on top of project updates, or keeping up with an
                             overloaded schedule, there are so many details required to run a successful
                             organization.</p>
                         <p>But those details come at a heavy cost: your focus.</p>
-                        <p>The important details of your organization have to be handled, but who says you’re the best
+                        <p>The important details of your organization have to be handled, but who says you're the best
                             person to handle them?</p>
                         <p>We all want to focus on things that make the biggest impact—professionally and personally.
                             But too often, the demanding details steal our time and attention.</p>
-                        <p>It’s time to take it back with {{ env('APP_NAME') }}.</p>
+                        <p>It's time to take it back with {{ env('APP_NAME') }}.</p>
                         <p></p>
                     </div>
                     <div class="col-lg-6">
                         <p></p>
-                        <p>{{ env('APP_NAME') }}’s AI-empowered Virtual Assistant services are pre-vetted and intentionally matched with
+                        <p>{{ env('APP_NAME') }}'s AI-empowered Virtual Assistant services are pre-vetted and intentionally matched with
                             you and your organization, saving you countless hours of managing job postings, filtering
                             candidates, and checking references. </p>
                         <p>By combining human expertise with powerful AI-enhanced tools, our assistants bring greater
                             efficiency and insight to every task. Our standards are high, and our acceptance rate is
-                            lower than Harvard’s, ensuring you get the right Virtual Assistant for your needs.</p>
+                            lower than Harvard's, ensuring you get the right Virtual Assistant for your needs.</p>
                         <p>So, instead of accomplishing those important (but time-consuming) administrative tasks, work
                             with {{ env('APP_NAME') }}. We are a flexible staffing company you can trust—powered by people, enhanced by
                             AI, giving you more time to focus on what matters most.</p>
@@ -916,46 +916,14 @@
                 </div>
                 <div class="row call-to-action-row u-fade-type-down js-scroll-trigger">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
+                        <a class="btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section id="resources" class="two-column-content" style="background-color: ">
-            <div class="container">
-                <div class="row u-fade-type-down js-scroll-trigger">
-                    <div class="col-lg-12">
-                        <h2 class="text-left"></h2>
-                    </div>
-                </div>
-                <div class="row u-fade-type-down js-scroll-trigger">
-                    <div class="col-lg-6">
-                        <p></p>
-                        <p><img decoding="async" class="alignnone size-full wp-image-25172"
-                                src="https://resources.belaysolutions.com/hubfs/Landing Page Assets/Resource Icons/25-Things-Assistant-Icon.png"
-                                alt="25 Things You Can Delegate to an Assistant Today" width="400"></p>
-                        <p></p>
-                    </div>
-                    <div class="col-lg-6">
-                        <p></p>
-                        <h2>25 Things You Can Delegate to Our Virtual Assistants Today</h2>
-                        <p>Delegation is one of the most effective tools in a leader’s tool kit because it helps you
-                            grow your business. We’re confident we can help your business become more productive. Still
-                            researching the benefits of hiring a virtual assistant or how this would improve your
-                            workflows? To get started, here’s a list of commonly delegated tasks that you can hand over
-                            today!</p>
-                        <p>&nbsp;</p>
-                        <p><a class="btn"
-                              href="https://resources.belaysolutions.com/25-things-you-can-delegate-to-an-assistant-today"
-                              target="_blank" rel="noopener">DOWNLOAD</a></p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+    
 
         <section id="learnmore" class="three-up-boxed-steps" style="background-color: ">
             <div class="container">
@@ -986,8 +954,8 @@
                             </svg>
                             <h3>Step 1. Sales Call</h3>
                             <p>Meet with your Solutions Consultant to identify your exact needs and pain points and
-                                determine the right hire for you. If {{ env('APP_NAME') }} is a good fit, we’ll send you an agreement to
-                                sign, and you’ll be paired with a Client Success Consultant.</p>
+                                determine the right hire for you. If {{ env('APP_NAME') }} is a good fit, we'll send you an agreement to
+                                sign, and you'll be paired with a Client Success Consultant.</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 boxed-column d-flex flex-column justify-content-flex-start">
@@ -1198,7 +1166,7 @@
                             </svg>
                             <h3>Step 3. Placement Process</h3>
                             <p>Now for our Secret Sauce: Your Client Success Consultant will vet and interview top
-                                candidates from our bench of nearly 2,000 U.S.-based Professionals. They’ll select the
+                                candidates from our bench of nearly 2,000 U.S.-based Professionals. They'll select the
                                 best match for you—in an average of just <em><strong>one week.</strong></em></p>
                         </div>
                     </div>
@@ -1300,7 +1268,7 @@
                 </div>
                 <div class="row call-to-action-row u-fade-type-down js-scroll-trigger">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
+                        <a class="btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                 </div>
             </div>
@@ -1313,7 +1281,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-4 left-column">
                         <h2 class="text-left"></h2>
                         <h2 style="text-align: left;">The {{ env('APP_NAME') }} Difference</h2>
-                        <a class="btn u-fade-type-down js-scroll-trigger" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a>
+                        <a class="btn u-fade-type-down js-scroll-trigger" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-8 right-column layout-2">
                         <div class="boxed-column boxed-hover-on">
@@ -1568,8 +1536,12 @@
                                         spending a ridiculous amount of time in email and not enough time serving my
                                         customers, understanding their needs and leading and building my team.<br>
                                         <br>
-                                        What we do is sell chicken. [But] I didn’t get into the business to do
+                                        What we do is sell chicken. [But] I didn't get into the business to do
                                         administrative work or sit in the office. I got into the business because I
+                                        wanted to serve people. I just can't imagine going through some of the
+                                        challenges of opening a new restaurant without support. I don't know how I
+                                        would've been able to accomplish it without [her] help. Even if it's just your
+                                        wife turning to you and saying, 'I get to see you a lot more than I did before.'
                                         wanted to serve people. I just can’t imagine going through some of the
                                         challenges of opening a new restaurant without support. I don’t know how I
                                         would’ve been able to accomplish it without [her] help. Even if it’s just your
@@ -1731,55 +1703,7 @@
         </section>
 
 
-        <div class="embed-full-screen">
-            <a href="#" class="close-full-screen"><i class="bi bi-x-circle"></i></a>
-            <div class="embed-container">
-                <iframe id="belay-brand-story-video" width="560" height="315"
-                        src="https://youtube.com/embed/HdbZx84KBbU" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen=""></iframe>
-            </div>
-        </div>
-
-        <section id="Video Full Width Section Title" class="video-full-width">
-            <div class="vid-background-image zoom-out-animation js-scroll-trigger"
-                 style="background-image: url('../../wp-content/uploads/2022/04/frank-bg.jpg');"></div>
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 d-flex flex-column justify-content-flex-center">
-                        <h4></h4>
-                        <h2>Client Story</h2>
-                        <h2></h2>
-                        <h3 style="color: #ffffff; text-align: center;">Watch Frank’s Story</h3>
-                        <a href="#" class="text-center open-full-screen open-full-screen-video"><i
-                                class="bi bi-play-circle"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script>
-            $(".open-full-screen-video").click(function (e) {
-                e.preventDefault();
-                $('.embed-full-screen').addClass('open');
-                $("#belay-brand-story-video")[0].src += "?autoplay=1";
-            });
-
-            $(".close-full-screen, .embed-container").click(function (e) {
-                e.preventDefault();
-                $('.embed-full-screen').removeClass('open');
-                $("#belay-brand-story-video")[0].src += "?autoplay=0";
-            });
-
-            $(document).on('keydown', function (event) {
-                if (event.key == "Escape") {
-                    $('.embed-full-screen').removeClass('open');
-                    $("#belay-brand-story-video")[0].src += "?autoplay=0";
-                }
-            });
-        </script>
-
+    
 
         <section id="Hire {{ env('APP_NAME') }} Banner Section Title" class="talk-to-sales-banner">
             <div class="container">
@@ -1792,7 +1716,7 @@
                     </div>
                     <div class="col-sm-6 text-right d-flex flex-column justify-content-center">
                         <div class="outter-button d-flex flex-row justify-content-end">
-                            <a class="btn u-fade-type-down js-scroll-trigger" href="../../get-started/index.html">Hire
+                            <a class="btn u-fade-type-down js-scroll-trigger" href="{{ route('get_started') }}">Hire
                                 {{ env('APP_NAME') }}<i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -1808,7 +1732,7 @@
                         <h2 class="text-left"></h2>
                         <h2 style="text-align: left;">Got a question about Virtual Assistants?<br>No problem.</h2>
                         <p class="text-left">Our team is here to help!</p>
-                        <a class="btn" href="../../get-started/index.html"><span>Hire {{ env('APP_NAME') }}</span></a></div>
+                        <a class="btn" href="{{ route('get_started') }}"><span>Hire {{ env('APP_NAME') }}</span></a></div>
                     <div class="col-sm-12 col-md-12 col-lg-7 right-column">
                         <div id="faq-accordion">
                             <div class="card">
